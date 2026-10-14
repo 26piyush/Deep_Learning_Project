@@ -75,10 +75,9 @@ crop_disease_review2/
 │
 └── archive/                    # Archived early prototypes and legacy scaffolds
     └── legacy_prototype/       # Initial scaffold archive
+
 ```
 
-
-Quick Start
 
 ### 1. Launch the Interactive Dashboard
 Run the provided Windows launcher batch script:
