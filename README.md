@@ -79,17 +79,51 @@ crop_disease_review2/
 ```
 
 
-### 1. Launch the Interactive Dashboard
-Run the provided Windows launcher batch script:
-```cmd
-run_app.bat
-```
-Or run directly through your activated Python virtual environment:
+---
+
+## 🚀 Setup & Execution Guide
+
+### Running on a New PC (After Cloning)
+
+#### Option A — One-Click Windows Launch (Recommended)
+Simply double-click `run_app.bat`. It will automatically:
+1. Detect or create the `.venv` virtual environment.
+2. Install all dependencies from `requirements.txt` on first launch.
+3. Check for model weights and launch the Streamlit web dashboard.
+
+#### Option B — Manual Terminal Setup
 ```bash
+# 1. Clone the repository
+git clone https://github.com/26piyush/Deep_Learning_Project.git
+cd Deep_Learning_Project
+
+# 2. Create and activate virtual environment
+python -m venv .venv
+# On Windows:
+.\.venv\Scripts\activate
+# On Linux / macOS:
+source .venv/bin/activate
+
+# 3. Install dependencies
+pip install -r requirements.txt
+
+# 4. Launch the interactive dashboard
 streamlit run app.py
 ```
 
-### 2. Run Model Evaluation
+### 📦 Model Weights Placement
+To run diagnostic inference, place your trained `.pt` checkpoint files in the `models/` directory:
+- `models/vit_best.pt` (ViT-B/16 foliar classifier)
+- `models/localization_best.pt` (YOLOv8 leaf & lesion detector)
+- `models/severity_best.pt` (ResNet-18 Horsfall-Barratt severity classifier)
+- `crop_health_model/model_state.pt` (Crop health 38-class weights)
+
+*(If checkpoints are missing, the web app launches safely and provides friendly instructions).*
+
+---
+
+### 🔬 Model Evaluation Commands
+
 Evaluate the Vision Transformer model:
 ```bash
 python -m src.evaluate_vit
@@ -104,3 +138,4 @@ Evaluate the Severity Assessment model:
 ```bash
 python -m src.evaluate_severity
 ```
+
