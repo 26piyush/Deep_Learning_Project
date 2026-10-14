@@ -1,10 +1,9 @@
-# 🌿 Precision Crop Pathology & Agronomic Decision Support System
+Precision Crop Pathology & Agronomic Decision Support System
 
 An end-to-end deep learning and vision transformer pipeline for leaf localization, foliar disease diagnosis, multi-tier severity grading, and agronomic prescription generation across 42 disease categories and 15 crop species.
 
 ---
-
-## 📌 Key Architectural Highlights
+Key Architectural Highlights
 
 1. **Stage 1 — Hierarchical Localization (YOLOv8n):** Isolates leaves and disease lesions from cluttered real-world field backgrounds with smart context padding (+15% margin) to preserve chlorotic halos.
 2. **Stage 2 — Multi-Dataset Foliar Diagnosis (ViT-B/16):** Employs multi-head self-attention Vision Transformers fine-tuned across 42 classes spanning PlantVillage, PlantDoc, and DiaMOS Pear datasets.
@@ -14,7 +13,7 @@ An end-to-end deep learning and vision transformer pipeline for leaf localizatio
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 
 ```text
 crop_disease_review2/
@@ -78,9 +77,8 @@ crop_disease_review2/
     └── legacy_prototype/       # Initial scaffold archive
 ```
 
----
 
-## 🚀 Quick Start
+Quick Start
 
 ### 1. Launch the Interactive Dashboard
 Run the provided Windows launcher batch script:
@@ -107,13 +105,3 @@ Evaluate the Severity Assessment model:
 ```bash
 python -m src.evaluate_severity
 ```
-
----
-
-## 📊 Faculty Viva & Defense Guide
-For exhaustive details regarding:
-- Mathematical formulations (Multi-Head Self-Attention, Horsfall-Barratt scale, mAP@50)
-- Verified benchmark scores across all datasets
-- High-yield Viva Voce defense questions and answers
-
-Refer to the in-depth documentation in [architecture.md](architecture.md).
