@@ -1,0 +1,10 @@
+{
+  "mAP50": 0.7245284063219288,
+  "mAP50_95": 0.4772629716052939,
+  "precision": 0.6862940616624413,
+  "recall": 0.6601307189542484,
+  "f1": 0.6729581909978742,
+  "mean_iou": 0.4668797759351934,
+  "evaluated_samples": 10,
+  "model_path": "C:\\Users\\piyus\\Desktop\\crop_disease_review2_starter\\models\\localization_best.pt"
+}

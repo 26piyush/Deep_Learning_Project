@@ -1,0 +1,100 @@
+{
+  "accuracy": 0.6653225806451613,
+  "macro_precision": 0.6976827094474153,
+  "macro_recall": 0.7233333333333334,
+  "macro_f1": 0.702234445984446,
+  "confusion_matrix": [
+    [
+      8,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      2,
+      34,
+      23,
+      1,
+      0
+    ],
+    [
+      0,
+      7,
+      40,
+      11,
+      2
+    ],
+    [
+      0,
+      3,
+      8,
+      33,
+      16
+    ],
+    [
+      0,
+      0,
+      4,
+      6,
+      50
+    ]
+  ],
+  "classification_report": {
+    "No Risk": {
+      "precision": 0.8,
+      "recall": 1.0,
+      "f1-score": 0.8888888888888888,
+      "support": 8.0
+    },
+    "Very Low": {
+      "precision": 0.7727272727272727,
+      "recall": 0.5666666666666667,
+      "f1-score": 0.6538461538461539,
+      "support": 60.0
+    },
+    "Low": {
+      "precision": 0.5333333333333333,
+      "recall": 0.6666666666666666,
+      "f1-score": 0.5925925925925926,
+      "support": 60.0
+    },
+    "Medium": {
+      "precision": 0.6470588235294118,
+      "recall": 0.55,
+      "f1-score": 0.5945945945945946,
+      "support": 60.0
+    },
+    "High": {
+      "precision": 0.7352941176470589,
+      "recall": 0.8333333333333334,
+      "f1-score": 0.78125,
+      "support": 60.0
+    },
+    "accuracy": 0.6653225806451613,
+    "macro avg": {
+      "precision": 0.6976827094474153,
+      "recall": 0.7233333333333334,
+      "f1-score": 0.702234445984446,
+      "support": 248.0
+    },
+    "weighted avg": {
+      "precision": 0.6762290840089701,
+      "recall": 0.6653225806451613,
+      "f1-score": 0.6630972240851274,
+      "support": 248.0
+    }
+  },
+  "class_names": [
+    "No Risk",
+    "Very Low",
+    "Low",
+    "Medium",
+    "High"
+  ],
+  "total_samples": 248,
+  "training_images": 995,
+  "validation_images": 248,
+  "model_path": "C:\\Users\\piyus\\Desktop\\crop_disease_review2_starter\\models\\severity_best.pt",
+  "device": "cuda"
+}
