@@ -111,3 +111,7 @@ ehthumbs_vista.db
 .pytest_cache/
 .coverage
 htmlcov/
+
+# Heavy DSLR Pear images (unsupported / not trained)
+testing_data/Pear*
+

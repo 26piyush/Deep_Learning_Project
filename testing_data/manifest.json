@@ -1,0 +1,1686 @@
+{
+  "total_images": 210,
+  "classes_count": 42,
+  "images": [
+    {
+      "filename": "Apple___Apple_scab_01.jpg",
+      "crop": "Apple",
+      "disease": "Apple scab",
+      "class": "Apple___Apple_scab",
+      "source_dataset": "PlantVillage",
+      "original_file": "8edca1d5-7ab9-47b6-bdd0-b61e4a11621e___FREC_Scab 3512.JPG"
+    },
+    {
+      "filename": "Apple___Apple_scab_02.jpg",
+      "crop": "Apple",
+      "disease": "Apple scab",
+      "class": "Apple___Apple_scab",
+      "source_dataset": "PlantVillage",
+      "original_file": "65c52553-6152-46d4-a576-3ef4984a6ad4___FREC_Scab 3524.JPG"
+    },
+    {
+      "filename": "Apple___Apple_scab_03.jpg",
+      "crop": "Apple",
+      "disease": "Apple scab",
+      "class": "Apple___Apple_scab",
+      "source_dataset": "PlantVillage",
+      "original_file": "70fa2c8f-5657-444f-b57b-3ad6755acc74___FREC_Scab 3275.JPG"
+    },
+    {
+      "filename": "Apple___Apple_scab_04.jpg",
+      "crop": "Apple",
+      "disease": "Apple scab",
+      "class": "Apple___Apple_scab",
+      "source_dataset": "PlantDoc",
+      "original_file": "12-20_apple_scab1_crop_255.jpg"
+    },
+    {
+      "filename": "Apple___Apple_scab_05.jpg",
+      "crop": "Apple",
+      "disease": "Apple scab",
+      "class": "Apple___Apple_scab",
+      "source_dataset": "PlantDoc",
+      "original_file": "acfsca026527_crop_1911.jpg"
+    },
+    {
+      "filename": "Apple___Black_rot_01.jpg",
+      "crop": "Apple",
+      "disease": "Black rot",
+      "class": "Apple___Black_rot",
+      "source_dataset": "PlantVillage",
+      "original_file": "bf5fa34e-8d39-43e2-8b54-ba83366871b1___JR_FrgE.S 3095.JPG"
+    },
+    {
+      "filename": "Apple___Black_rot_02.jpg",
+      "crop": "Apple",
+      "disease": "Black rot",
+      "class": "Apple___Black_rot",
+      "source_dataset": "PlantVillage",
+      "original_file": "2c6184ba-cc2f-4311-977e-1ed6c1410c1a___JR_FrgE.S 2973.JPG"
+    },
+    {
+      "filename": "Apple___Black_rot_03.jpg",
+      "crop": "Apple",
+      "disease": "Black rot",
+      "class": "Apple___Black_rot",
+      "source_dataset": "PlantVillage",
+      "original_file": "8f866e9b-a1e4-4b34-89f0-74f2ddc641d1___JR_FrgE.S 8738.JPG"
+    },
+    {
+      "filename": "Apple___Black_rot_04.jpg",
+      "crop": "Apple",
+      "disease": "Black rot",
+      "class": "Apple___Black_rot",
+      "source_dataset": "PlantVillage",
+      "original_file": "5ac53fe2-9869-498b-b13c-fe8b3a5933b1___JR_FrgE.S 8678.JPG"
+    },
+    {
+      "filename": "Apple___Black_rot_05.jpg",
+      "crop": "Apple",
+      "disease": "Black rot",
+      "class": "Apple___Black_rot",
+      "source_dataset": "PlantVillage",
+      "original_file": "9cde32eb-f860-4ba0-8d6e-34db1fbaf8b2___JR_FrgE.S 2875.JPG"
+    },
+    {
+      "filename": "Apple___Cedar_apple_rust_01.jpg",
+      "crop": "Apple",
+      "disease": "Cedar apple rust",
+      "class": "Apple___Cedar_apple_rust",
+      "source_dataset": "PlantVillage",
+      "original_file": "85f1b51d-ad5e-4ec2-a46b-2a9dade22e2a___FREC_C.Rust 9971.JPG"
+    },
+    {
+      "filename": "Apple___Cedar_apple_rust_02.jpg",
+      "crop": "Apple",
+      "disease": "Cedar apple rust",
+      "class": "Apple___Cedar_apple_rust",
+      "source_dataset": "PlantDoc",
+      "original_file": "1-Cedar-apple-rust-infections-and-rust-induced-leafspot-on-Ginger-Gold-4-Jun-08-2d4hi2k_crop_182.jpg"
+    },
+    {
+      "filename": "Apple___Cedar_apple_rust_03.jpg",
+      "crop": "Apple",
+      "disease": "Cedar apple rust",
+      "class": "Apple___Cedar_apple_rust",
+      "source_dataset": "PlantVillage",
+      "original_file": "39c00da9-396e-4bd3-8e4a-f701c11d4fa7___FREC_C.Rust 3907.JPG"
+    },
+    {
+      "filename": "Apple___Cedar_apple_rust_04.jpg",
+      "crop": "Apple",
+      "disease": "Cedar apple rust",
+      "class": "Apple___Cedar_apple_rust",
+      "source_dataset": "PlantVillage",
+      "original_file": "edf726ff-0eff-46a5-90d3-23badf249c46___FREC_C.Rust 9972.JPG"
+    },
+    {
+      "filename": "Apple___Cedar_apple_rust_05.jpg",
+      "crop": "Apple",
+      "disease": "Cedar apple rust",
+      "class": "Apple___Cedar_apple_rust",
+      "source_dataset": "PlantVillage",
+      "original_file": "92d7ce46-da77-4c87-a58b-81a44b0a9a58___FREC_C.Rust 4351.JPG"
+    },
+    {
+      "filename": "Apple___healthy_01.jpg",
+      "crop": "Apple",
+      "disease": "healthy",
+      "class": "Apple___healthy",
+      "source_dataset": "PlantVillage",
+      "original_file": "0580ddaa-0221-4adc-8b64-8ce1842f5f07___RS_HL 6242.JPG"
+    },
+    {
+      "filename": "Apple___healthy_02.jpg",
+      "crop": "Apple",
+      "disease": "healthy",
+      "class": "Apple___healthy",
+      "source_dataset": "PlantVillage",
+      "original_file": "4b2e833c-9618-4733-90b1-71877f87a6f6___RS_HL 7361.JPG"
+    },
+    {
+      "filename": "Apple___healthy_03.jpg",
+      "crop": "Apple",
+      "disease": "healthy",
+      "class": "Apple___healthy",
+      "source_dataset": "PlantVillage",
+      "original_file": "0793dfa6-3728-409b-a5dc-7f3c07528dde___RS_HL 7379.JPG"
+    },
+    {
+      "filename": "Apple___healthy_04.jpg",
+      "crop": "Apple",
+      "disease": "healthy",
+      "class": "Apple___healthy",
+      "source_dataset": "PlantVillage",
+      "original_file": "28c298e3-0846-4372-a9ab-562f2ce7cf9d___RS_HL 5846.JPG"
+    },
+    {
+      "filename": "Apple___healthy_05.jpg",
+      "crop": "Apple",
+      "disease": "healthy",
+      "class": "Apple___healthy",
+      "source_dataset": "PlantDoc",
+      "original_file": "stock-photo-green-apple-leaves-on-the-white-background-796491496_crop_5175.jpg"
+    },
+    {
+      "filename": "Blueberry___healthy_01.jpg",
+      "crop": "Blueberry",
+      "disease": "healthy",
+      "class": "Blueberry___healthy",
+      "source_dataset": "PlantDoc",
+      "original_file": "Blueberry07_crop_37.jpg"
+    },
+    {
+      "filename": "Blueberry___healthy_02.jpg",
+      "crop": "Blueberry",
+      "disease": "healthy",
+      "class": "Blueberry___healthy",
+      "source_dataset": "PlantVillage",
+      "original_file": "8660d440-2f8a-4822-8a7a-af4a38f31f68___RS_HL 5210.JPG"
+    },
+    {
+      "filename": "Blueberry___healthy_03.jpg",
+      "crop": "Blueberry",
+      "disease": "healthy",
+      "class": "Blueberry___healthy",
+      "source_dataset": "PlantDoc",
+      "original_file": "Fruit-Blueberry-Northblue_crop_507.jpg"
+    },
+    {
+      "filename": "Blueberry___healthy_04.jpg",
+      "crop": "Blueberry",
+      "disease": "healthy",
+      "class": "Blueberry___healthy",
+      "source_dataset": "PlantVillage",
+      "original_file": "9028d953-0b4d-4efc-8021-0473b6fd56de___RS_HL 5183.JPG"
+    },
+    {
+      "filename": "Blueberry___healthy_05.jpg",
+      "crop": "Blueberry",
+      "disease": "healthy",
+      "class": "Blueberry___healthy",
+      "source_dataset": "PlantDoc",
+      "original_file": "blueberry-fruit-blooming-flower-with-leaf-g3wa0t_crop_2358.jpg"
+    },
+    {
+      "filename": "Cherry___Powdery_mildew_01.jpg",
+      "crop": "Cherry",
+      "disease": "Powdery mildew",
+      "class": "Cherry___Powdery_mildew",
+      "source_dataset": "PlantVillage",
+      "original_file": "ea5bee00-19ac-4b88-a52c-751bb287c087___FREC_Pwd.M 0580.JPG"
+    },
+    {
+      "filename": "Cherry___Powdery_mildew_02.jpg",
+      "crop": "Cherry",
+      "disease": "Powdery mildew",
+      "class": "Cherry___Powdery_mildew",
+      "source_dataset": "PlantVillage",
+      "original_file": "1935522e-77d1-4fc2-a84f-5f32835cf0d0___FREC_Pwd.M 4792.JPG"
+    },
+    {
+      "filename": "Cherry___Powdery_mildew_03.jpg",
+      "crop": "Cherry",
+      "disease": "Powdery mildew",
+      "class": "Cherry___Powdery_mildew",
+      "source_dataset": "PlantVillage",
+      "original_file": "bc3b4287-ce7a-4ca1-bfa8-4812832fa00f___FREC_Pwd.M 0412.JPG"
+    },
+    {
+      "filename": "Cherry___Powdery_mildew_04.jpg",
+      "crop": "Cherry",
+      "disease": "Powdery mildew",
+      "class": "Cherry___Powdery_mildew",
+      "source_dataset": "PlantVillage",
+      "original_file": "3334bbce-5987-4c52-b2e1-105dab961167___FREC_Pwd.M 4994.JPG"
+    },
+    {
+      "filename": "Cherry___Powdery_mildew_05.jpg",
+      "crop": "Cherry",
+      "disease": "Powdery mildew",
+      "class": "Cherry___Powdery_mildew",
+      "source_dataset": "PlantVillage",
+      "original_file": "61bd19e2-80b5-4370-a497-2d25a15a7ac7___FREC_Pwd.M 0577.JPG"
+    },
+    {
+      "filename": "Cherry___healthy_01.jpg",
+      "crop": "Cherry",
+      "disease": "healthy",
+      "class": "Cherry___healthy",
+      "source_dataset": "PlantVillage",
+      "original_file": "f21585ad-cdf1-49ac-8290-19d93653370d___JR_HL 9670.JPG"
+    },
+    {
+      "filename": "Cherry___healthy_02.jpg",
+      "crop": "Cherry",
+      "disease": "healthy",
+      "class": "Cherry___healthy",
+      "source_dataset": "PlantDoc",
+      "original_file": "Bird-Cherry-%28Prunus-Padus%29-Leaf-and-Flowers_crop_1657.jpg"
+    },
+    {
+      "filename": "Cherry___healthy_03.jpg",
+      "crop": "Cherry",
+      "disease": "healthy",
+      "class": "Cherry___healthy",
+      "source_dataset": "PlantVillage",
+      "original_file": "69de380a-4fd8-4c50-bdff-a983495dcd8c___JR_HL 4175.JPG"
+    },
+    {
+      "filename": "Cherry___healthy_04.jpg",
+      "crop": "Cherry",
+      "disease": "healthy",
+      "class": "Cherry___healthy",
+      "source_dataset": "PlantDoc",
+      "original_file": "BlackCherry04_crop_1666.jpg"
+    },
+    {
+      "filename": "Cherry___healthy_05.jpg",
+      "crop": "Cherry",
+      "disease": "healthy",
+      "class": "Cherry___healthy",
+      "source_dataset": "PlantVillage",
+      "original_file": "d699b1fd-0743-4406-b7b2-72ced5b5090c___JR_HL 9730.JPG"
+    },
+    {
+      "filename": "Corn___Cercospora_leaf_spot Gray_leaf_spot_01.jpg",
+      "crop": "Corn",
+      "disease": "Cercospora leaf spot Gray leaf spot",
+      "class": "Corn___Cercospora_leaf_spot Gray_leaf_spot",
+      "source_dataset": "PlantVillage",
+      "original_file": "56861977-2bbb-445d-a956-95fcb62f93f7___RS_GLSp 4607 copy.jpg"
+    },
+    {
+      "filename": "Corn___Cercospora_leaf_spot Gray_leaf_spot_02.jpg",
+      "crop": "Corn",
+      "disease": "Cercospora leaf spot Gray leaf spot",
+      "class": "Corn___Cercospora_leaf_spot Gray_leaf_spot",
+      "source_dataset": "PlantVillage",
+      "original_file": "584a0a63-7d44-469c-a0b0-f4d0aaa4c82f___RS_GLSp 4445.JPG"
+    },
+    {
+      "filename": "Corn___Cercospora_leaf_spot Gray_leaf_spot_03.jpg",
+      "crop": "Corn",
+      "disease": "Cercospora leaf spot Gray leaf spot",
+      "class": "Corn___Cercospora_leaf_spot Gray_leaf_spot",
+      "source_dataset": "PlantDoc",
+      "original_file": "g1902-3b_crop_3151.jpg"
+    },
+    {
+      "filename": "Corn___Cercospora_leaf_spot Gray_leaf_spot_04.jpg",
+      "crop": "Corn",
+      "disease": "Cercospora leaf spot Gray leaf spot",
+      "class": "Corn___Cercospora_leaf_spot Gray_leaf_spot",
+      "source_dataset": "PlantVillage",
+      "original_file": "5958b15a-0ab1-411d-a5f2-99ef49572954___RS_GLSp 9275.JPG"
+    },
+    {
+      "filename": "Corn___Cercospora_leaf_spot Gray_leaf_spot_05.jpg",
+      "crop": "Corn",
+      "disease": "Cercospora leaf spot Gray leaf spot",
+      "class": "Corn___Cercospora_leaf_spot Gray_leaf_spot",
+      "source_dataset": "PlantVillage",
+      "original_file": "922d9b80-97b2-4251-a073-0d41bddb0654___RS_GLSp 9359.JPG"
+    },
+    {
+      "filename": "Corn___Common_rust_01.jpg",
+      "crop": "Corn",
+      "disease": "Common rust",
+      "class": "Corn___Common_rust",
+      "source_dataset": "PlantVillage",
+      "original_file": "RS_Rust 1660.JPG"
+    },
+    {
+      "filename": "Corn___Common_rust_02.jpg",
+      "crop": "Corn",
+      "disease": "Common rust",
+      "class": "Corn___Common_rust",
+      "source_dataset": "PlantVillage",
+      "original_file": "RS_Rust 2161.JPG"
+    },
+    {
+      "filename": "Corn___Common_rust_03.jpg",
+      "crop": "Corn",
+      "disease": "Common rust",
+      "class": "Corn___Common_rust",
+      "source_dataset": "PlantVillage",
+      "original_file": "RS_Rust 2208.JPG"
+    },
+    {
+      "filename": "Corn___Common_rust_04.jpg",
+      "crop": "Corn",
+      "disease": "Common rust",
+      "class": "Corn___Common_rust",
+      "source_dataset": "PlantDoc",
+      "original_file": "So-Corn-Rust_crop_1615.jpg"
+    },
+    {
+      "filename": "Corn___Common_rust_05.jpg",
+      "crop": "Corn",
+      "disease": "Common rust",
+      "class": "Corn___Common_rust",
+      "source_dataset": "PlantDoc",
+      "original_file": "southern-rust-upper-side-576x1024_crop_4979.jpg"
+    },
+    {
+      "filename": "Corn___Northern_Leaf_Blight_01.jpg",
+      "crop": "Corn",
+      "disease": "Northern Leaf Blight",
+      "class": "Corn___Northern_Leaf_Blight",
+      "source_dataset": "PlantVillage",
+      "original_file": "b88f09d6-6951-48bc-ac61-ca9cc9e988fa___RS_NLB 0828.JPG"
+    },
+    {
+      "filename": "Corn___Northern_Leaf_Blight_02.jpg",
+      "crop": "Corn",
+      "disease": "Northern Leaf Blight",
+      "class": "Corn___Northern_Leaf_Blight",
+      "source_dataset": "PlantVillage",
+      "original_file": "08bbb4db-b722-41ea-a292-90bafcb8e77c___RS_NLB 3787 copy.jpg"
+    },
+    {
+      "filename": "Corn___Northern_Leaf_Blight_03.jpg",
+      "crop": "Corn",
+      "disease": "Northern Leaf Blight",
+      "class": "Corn___Northern_Leaf_Blight",
+      "source_dataset": "PlantVillage",
+      "original_file": "7d55a6f5-5101-4103-b34c-5e3d764d2757___RS_NLB 3592.JPG"
+    },
+    {
+      "filename": "Corn___Northern_Leaf_Blight_04.jpg",
+      "crop": "Corn",
+      "disease": "Northern Leaf Blight",
+      "class": "Corn___Northern_Leaf_Blight",
+      "source_dataset": "PlantVillage",
+      "original_file": "36f36ace-ecdb-49af-b1ec-a29d8b0ae918___RS_NLB 3836 copy.jpg"
+    },
+    {
+      "filename": "Corn___Northern_Leaf_Blight_05.jpg",
+      "crop": "Corn",
+      "disease": "Northern Leaf Blight",
+      "class": "Corn___Northern_Leaf_Blight",
+      "source_dataset": "PlantVillage",
+      "original_file": "7f308111-9ef3-4ee0-b820-0af9743f8040___RS_NLB 3547 copy.jpg"
+    },
+    {
+      "filename": "Corn___healthy_01.jpg",
+      "crop": "Corn",
+      "disease": "healthy",
+      "class": "Corn___healthy",
+      "source_dataset": "PlantVillage",
+      "original_file": "39569763-d4ed-4687-82c6-c389496b7819___R.S_HL 8183 copy 2.jpg"
+    },
+    {
+      "filename": "Corn___healthy_02.jpg",
+      "crop": "Corn",
+      "disease": "healthy",
+      "class": "Corn___healthy",
+      "source_dataset": "PlantVillage",
+      "original_file": "8cdec02e-6273-452f-8681-1319a74d3698___R.S_HL 8185 copy 2.jpg"
+    },
+    {
+      "filename": "Corn___healthy_03.jpg",
+      "crop": "Corn",
+      "disease": "healthy",
+      "class": "Corn___healthy",
+      "source_dataset": "PlantVillage",
+      "original_file": "fb7c73e2-6f3a-4dcc-bc31-217f37512d68___R.S_HL 8293 copy.jpg"
+    },
+    {
+      "filename": "Corn___healthy_04.jpg",
+      "crop": "Corn",
+      "disease": "healthy",
+      "class": "Corn___healthy",
+      "source_dataset": "PlantVillage",
+      "original_file": "a694e61f-3a63-40ac-9a31-66732cf9921d___R.S_HL 8116 copy 2.jpg"
+    },
+    {
+      "filename": "Corn___healthy_05.jpg",
+      "crop": "Corn",
+      "disease": "healthy",
+      "class": "Corn___healthy",
+      "source_dataset": "PlantVillage",
+      "original_file": "6747992a-6f4b-4ecc-bc4e-69a6fa3f71da___R.S_HL 5492 copy.jpg"
+    },
+    {
+      "filename": "Grape___Black_rot_01.jpg",
+      "crop": "Grape",
+      "disease": "Black rot",
+      "class": "Grape___Black_rot",
+      "source_dataset": "PlantVillage",
+      "original_file": "b66d9065-d347-484e-bf55-6d31fee8a32c___FAM_B.Rot 5042.JPG"
+    },
+    {
+      "filename": "Grape___Black_rot_02.jpg",
+      "crop": "Grape",
+      "disease": "Black rot",
+      "class": "Grape___Black_rot",
+      "source_dataset": "PlantVillage",
+      "original_file": "2c0b3cf6-d64c-410a-b640-f84cd88d8f28___FAM_B.Rot 3548.JPG"
+    },
+    {
+      "filename": "Grape___Black_rot_03.jpg",
+      "crop": "Grape",
+      "disease": "Black rot",
+      "class": "Grape___Black_rot",
+      "source_dataset": "PlantVillage",
+      "original_file": "0aec6325-48be-4373-886d-fff5aeea6d26___FAM_B.Rot 3465.JPG"
+    },
+    {
+      "filename": "Grape___Black_rot_04.jpg",
+      "crop": "Grape",
+      "disease": "Black rot",
+      "class": "Grape___Black_rot",
+      "source_dataset": "PlantVillage",
+      "original_file": "9236977d-9d74-4bb7-9ef0-7b2a6737e59e___FAM_B.Rot 3084.JPG"
+    },
+    {
+      "filename": "Grape___Black_rot_05.jpg",
+      "crop": "Grape",
+      "disease": "Black rot",
+      "class": "Grape___Black_rot",
+      "source_dataset": "PlantVillage",
+      "original_file": "f19cbf6e-443b-46ff-ade7-0d11114f72c3___FAM_B.Rot 3448.JPG"
+    },
+    {
+      "filename": "Grape___Esca_(Black_Measles)_01.jpg",
+      "crop": "Grape",
+      "disease": "Esca (Black Measles)",
+      "class": "Grape___Esca_(Black_Measles)",
+      "source_dataset": "PlantVillage",
+      "original_file": "be30491b-6cfd-4ce3-8d62-482fc8496b55___FAM_B.Msls 3913.JPG"
+    },
+    {
+      "filename": "Grape___Esca_(Black_Measles)_02.jpg",
+      "crop": "Grape",
+      "disease": "Esca (Black Measles)",
+      "class": "Grape___Esca_(Black_Measles)",
+      "source_dataset": "PlantVillage",
+      "original_file": "9a5600b5-200b-4243-ba20-3bc80cf53a91___FAM_B.Msls 3952.JPG"
+    },
+    {
+      "filename": "Grape___Esca_(Black_Measles)_03.jpg",
+      "crop": "Grape",
+      "disease": "Esca (Black Measles)",
+      "class": "Grape___Esca_(Black_Measles)",
+      "source_dataset": "PlantVillage",
+      "original_file": "eb6f0cb7-781d-4b62-865f-ed7251ccbdf7___FAM_B.Msls 4009.JPG"
+    },
+    {
+      "filename": "Grape___Esca_(Black_Measles)_04.jpg",
+      "crop": "Grape",
+      "disease": "Esca (Black Measles)",
+      "class": "Grape___Esca_(Black_Measles)",
+      "source_dataset": "PlantVillage",
+      "original_file": "fe283531-d164-4b6b-9035-561ad0aa323e___FAM_B.Msls 4082.JPG"
+    },
+    {
+      "filename": "Grape___Esca_(Black_Measles)_05.jpg",
+      "crop": "Grape",
+      "disease": "Esca (Black Measles)",
+      "class": "Grape___Esca_(Black_Measles)",
+      "source_dataset": "PlantVillage",
+      "original_file": "0cca45be-2eef-4629-b515-0c78ce5119d1___FAM_B.Msls 4283.JPG"
+    },
+    {
+      "filename": "Grape___Leaf_blight_(Isariopsis_Leaf_Spot)_01.jpg",
+      "crop": "Grape",
+      "disease": "Leaf blight (Isariopsis Leaf Spot)",
+      "class": "Grape___Leaf_blight_(Isariopsis_Leaf_Spot)",
+      "source_dataset": "PlantVillage",
+      "original_file": "8b3d8940-4f99-46d8-bc55-14136e392b7e___FAM_L.Blight 4883.JPG"
+    },
+    {
+      "filename": "Grape___Leaf_blight_(Isariopsis_Leaf_Spot)_02.jpg",
+      "crop": "Grape",
+      "disease": "Leaf blight (Isariopsis Leaf Spot)",
+      "class": "Grape___Leaf_blight_(Isariopsis_Leaf_Spot)",
+      "source_dataset": "PlantVillage",
+      "original_file": "b517ea7d-7cb4-410c-899c-667270b45246___FAM_L.Blight 1568.JPG"
+    },
+    {
+      "filename": "Grape___Leaf_blight_(Isariopsis_Leaf_Spot)_03.jpg",
+      "crop": "Grape",
+      "disease": "Leaf blight (Isariopsis Leaf Spot)",
+      "class": "Grape___Leaf_blight_(Isariopsis_Leaf_Spot)",
+      "source_dataset": "PlantVillage",
+      "original_file": "2a5fe5e3-2acd-4e11-8071-fd4504452cb7___FAM_L.Blight 1385.JPG"
+    },
+    {
+      "filename": "Grape___Leaf_blight_(Isariopsis_Leaf_Spot)_04.jpg",
+      "crop": "Grape",
+      "disease": "Leaf blight (Isariopsis Leaf Spot)",
+      "class": "Grape___Leaf_blight_(Isariopsis_Leaf_Spot)",
+      "source_dataset": "PlantVillage",
+      "original_file": "3fa16c43-e070-4943-8484-450dcfb431e5___FAM_L.Blight 4752.JPG"
+    },
+    {
+      "filename": "Grape___Leaf_blight_(Isariopsis_Leaf_Spot)_05.jpg",
+      "crop": "Grape",
+      "disease": "Leaf blight (Isariopsis Leaf Spot)",
+      "class": "Grape___Leaf_blight_(Isariopsis_Leaf_Spot)",
+      "source_dataset": "PlantVillage",
+      "original_file": "cf52cd17-7166-4fee-a861-465425a83baf___FAM_L.Blight 3632.JPG"
+    },
+    {
+      "filename": "Grape___healthy_01.jpg",
+      "crop": "Grape",
+      "disease": "healthy",
+      "class": "Grape___healthy",
+      "source_dataset": "PlantVillage",
+      "original_file": "71af6c2b-b3ed-4629-8aaa-7b60187caee1___Mt.N.V_HL 9069.JPG"
+    },
+    {
+      "filename": "Grape___healthy_02.jpg",
+      "crop": "Grape",
+      "disease": "healthy",
+      "class": "Grape___healthy",
+      "source_dataset": "PlantVillage",
+      "original_file": "1abe34b9-186b-4a90-a3a3-855005ff50f5___Mt.N.V_HL 9033.JPG"
+    },
+    {
+      "filename": "Grape___healthy_03.jpg",
+      "crop": "Grape",
+      "disease": "healthy",
+      "class": "Grape___healthy",
+      "source_dataset": "PlantVillage",
+      "original_file": "b80580f7-8e3e-4a81-ae32-df854d6ae3a8___Mt.N.V_HL 8978.JPG"
+    },
+    {
+      "filename": "Grape___healthy_04.jpg",
+      "crop": "Grape",
+      "disease": "healthy",
+      "class": "Grape___healthy",
+      "source_dataset": "PlantDoc",
+      "original_file": "vine-leaves-10824119_crop_6266.jpg"
+    },
+    {
+      "filename": "Grape___healthy_05.jpg",
+      "crop": "Grape",
+      "disease": "healthy",
+      "class": "Grape___healthy",
+      "source_dataset": "PlantVillage",
+      "original_file": "52bb5946-964f-4dce-a8b8-8c01bdd8737d___Mt.N.V_HL 6078.JPG"
+    },
+    {
+      "filename": "Orange___Haunglongbing_(Citrus_greening)_01.jpg",
+      "crop": "Orange",
+      "disease": "Haunglongbing (Citrus greening)",
+      "class": "Orange___Haunglongbing_(Citrus_greening)",
+      "source_dataset": "PlantVillage",
+      "original_file": "c2c99f8c-3173-4842-ad6c-65c6d7a7dd17___CREC_HLB 7002.JPG"
+    },
+    {
+      "filename": "Orange___Haunglongbing_(Citrus_greening)_02.jpg",
+      "crop": "Orange",
+      "disease": "Haunglongbing (Citrus greening)",
+      "class": "Orange___Haunglongbing_(Citrus_greening)",
+      "source_dataset": "PlantVillage",
+      "original_file": "1a9458ac-a28d-46ba-a170-8de85fcf8c8a___UF.Citrus_HLB_Lab 1151.JPG"
+    },
+    {
+      "filename": "Orange___Haunglongbing_(Citrus_greening)_03.jpg",
+      "crop": "Orange",
+      "disease": "Haunglongbing (Citrus greening)",
+      "class": "Orange___Haunglongbing_(Citrus_greening)",
+      "source_dataset": "PlantVillage",
+      "original_file": "5f79ac9c-0888-464b-ab57-5b826d7941a6___CREC_HLB 4565.JPG"
+    },
+    {
+      "filename": "Orange___Haunglongbing_(Citrus_greening)_04.jpg",
+      "crop": "Orange",
+      "disease": "Haunglongbing (Citrus greening)",
+      "class": "Orange___Haunglongbing_(Citrus_greening)",
+      "source_dataset": "PlantVillage",
+      "original_file": "e09a37fc-7c44-4547-8359-b297e0c095f5___UF.Citrus_HLB_Lab 1322.JPG"
+    },
+    {
+      "filename": "Orange___Haunglongbing_(Citrus_greening)_05.jpg",
+      "crop": "Orange",
+      "disease": "Haunglongbing (Citrus greening)",
+      "class": "Orange___Haunglongbing_(Citrus_greening)",
+      "source_dataset": "PlantVillage",
+      "original_file": "e6cb4421-6480-40f7-9c7b-cdce5c9c367c___UF.Citrus_HLB_Lab 0575.JPG"
+    },
+    {
+      "filename": "Peach___Bacterial_spot_01.jpg",
+      "crop": "Peach",
+      "disease": "Bacterial spot",
+      "class": "Peach___Bacterial_spot",
+      "source_dataset": "PlantVillage",
+      "original_file": "d80f1db8-8942-4a9c-92a8-adc0a526677e___Rut._Bact.S 3401.JPG"
+    },
+    {
+      "filename": "Peach___Bacterial_spot_02.jpg",
+      "crop": "Peach",
+      "disease": "Bacterial spot",
+      "class": "Peach___Bacterial_spot",
+      "source_dataset": "PlantVillage",
+      "original_file": "525b30f6-6680-4b00-8b78-e0b0ed6be12c___Rutg._Bact.S 1314.JPG"
+    },
+    {
+      "filename": "Peach___Bacterial_spot_03.jpg",
+      "crop": "Peach",
+      "disease": "Bacterial spot",
+      "class": "Peach___Bacterial_spot",
+      "source_dataset": "PlantVillage",
+      "original_file": "180a39d6-a231-41de-8873-70911652a4a9___Rutg._Bact.S 1707.JPG"
+    },
+    {
+      "filename": "Peach___Bacterial_spot_04.jpg",
+      "crop": "Peach",
+      "disease": "Bacterial spot",
+      "class": "Peach___Bacterial_spot",
+      "source_dataset": "PlantVillage",
+      "original_file": "d8dbdaec-36d8-413c-aeb5-f8b508ab0498___Rutg._Bact.S 2135.JPG"
+    },
+    {
+      "filename": "Peach___Bacterial_spot_05.jpg",
+      "crop": "Peach",
+      "disease": "Bacterial spot",
+      "class": "Peach___Bacterial_spot",
+      "source_dataset": "PlantVillage",
+      "original_file": "eb83eac1-feae-44eb-baf3-5adb93436815___Rutg._Bact.S 1777.JPG"
+    },
+    {
+      "filename": "Peach___healthy_01.jpg",
+      "crop": "Peach",
+      "disease": "healthy",
+      "class": "Peach___healthy",
+      "source_dataset": "PlantDoc",
+      "original_file": "peach_tree_20100523_crop_4199.jpg"
+    },
+    {
+      "filename": "Peach___healthy_02.jpg",
+      "crop": "Peach",
+      "disease": "healthy",
+      "class": "Peach___healthy",
+      "source_dataset": "PlantVillage",
+      "original_file": "96e5f242-6797-4564-897f-de3619bde240___Rutg._HL 3508.JPG"
+    },
+    {
+      "filename": "Peach___healthy_03.jpg",
+      "crop": "Peach",
+      "disease": "healthy",
+      "class": "Peach___healthy",
+      "source_dataset": "PlantVillage",
+      "original_file": "1e456a81-ec19-43b9-8502-73e1996a0ead___Rutg._HL 3651.JPG"
+    },
+    {
+      "filename": "Peach___healthy_04.jpg",
+      "crop": "Peach",
+      "disease": "healthy",
+      "class": "Peach___healthy",
+      "source_dataset": "PlantVillage",
+      "original_file": "d5cef93b-b589-4bbc-a383-c717a80bd915___Rutg._HL 2452.JPG"
+    },
+    {
+      "filename": "Peach___healthy_05.jpg",
+      "crop": "Peach",
+      "disease": "healthy",
+      "class": "Peach___healthy",
+      "source_dataset": "PlantVillage",
+      "original_file": "079ad23f-a0ac-4b01-b7fd-bb2e0ff9fc78___Rutg._HL 3576.JPG"
+    },
+    {
+      "filename": "Pepper,_bell___Bacterial_spot_01.jpg",
+      "crop": "Pepper, bell",
+      "disease": "Bacterial spot",
+      "class": "Pepper,_bell___Bacterial_spot",
+      "source_dataset": "PlantVillage",
+      "original_file": "d8e201e5-870e-4985-b2d7-f0dc80ab96b0___JR_B.Spot 8892.JPG"
+    },
+    {
+      "filename": "Pepper,_bell___Bacterial_spot_02.jpg",
+      "crop": "Pepper, bell",
+      "disease": "Bacterial spot",
+      "class": "Pepper,_bell___Bacterial_spot",
+      "source_dataset": "PlantVillage",
+      "original_file": "6c859178-38ef-450e-8e93-c357957f5608___NREC_B.Spot 9061.JPG"
+    },
+    {
+      "filename": "Pepper,_bell___Bacterial_spot_03.jpg",
+      "crop": "Pepper, bell",
+      "disease": "Bacterial spot",
+      "class": "Pepper,_bell___Bacterial_spot",
+      "source_dataset": "PlantDoc",
+      "original_file": "TCSV_Pepper%20%284%29_crop_1683.jpg"
+    },
+    {
+      "filename": "Pepper,_bell___Bacterial_spot_04.jpg",
+      "crop": "Pepper, bell",
+      "disease": "Bacterial spot",
+      "class": "Pepper,_bell___Bacterial_spot",
+      "source_dataset": "PlantVillage",
+      "original_file": "7d2eeb0b-77d8-4de5-8739-adca95edd4a2___JR_B.Spot 8946.JPG"
+    },
+    {
+      "filename": "Pepper,_bell___Bacterial_spot_05.jpg",
+      "crop": "Pepper, bell",
+      "disease": "Bacterial spot",
+      "class": "Pepper,_bell___Bacterial_spot",
+      "source_dataset": "PlantVillage",
+      "original_file": "ee596e36-e147-429a-bcf7-de47de0470c0___JR_B.Spot 3104.JPG"
+    },
+    {
+      "filename": "Pepper,_bell___healthy_01.jpg",
+      "crop": "Pepper, bell",
+      "disease": "healthy",
+      "class": "Pepper,_bell___healthy",
+      "source_dataset": "PlantVillage",
+      "original_file": "ad027bf0-05e5-41c6-8bb0-29b574170790___JR_HL 7815.JPG"
+    },
+    {
+      "filename": "Pepper,_bell___healthy_02.jpg",
+      "crop": "Pepper, bell",
+      "disease": "healthy",
+      "class": "Pepper,_bell___healthy",
+      "source_dataset": "PlantVillage",
+      "original_file": "4fa781ca-8ec1-4446-82a6-c97751f91f71___JR_HL 8279.JPG"
+    },
+    {
+      "filename": "Pepper,_bell___healthy_03.jpg",
+      "crop": "Pepper, bell",
+      "disease": "healthy",
+      "class": "Pepper,_bell___healthy",
+      "source_dataset": "PlantVillage",
+      "original_file": "88bf85cd-2b1a-46e1-a809-9a1180dfe571___JR_HL 8617.JPG"
+    },
+    {
+      "filename": "Pepper,_bell___healthy_04.jpg",
+      "crop": "Pepper, bell",
+      "disease": "healthy",
+      "class": "Pepper,_bell___healthy",
+      "source_dataset": "PlantVillage",
+      "original_file": "6211ceea-7c65-4051-bf99-6b9df60f0dae___JR_HL 8662.JPG"
+    },
+    {
+      "filename": "Pepper,_bell___healthy_05.jpg",
+      "crop": "Pepper, bell",
+      "disease": "healthy",
+      "class": "Pepper,_bell___healthy",
+      "source_dataset": "PlantVillage",
+      "original_file": "174172a7-b8c3-4afc-aa95-637c08472656___JR_HL 7923.JPG"
+    },
+    {
+      "filename": "Potato___Early_blight_01.jpg",
+      "crop": "Potato",
+      "disease": "Early blight",
+      "class": "Potato___Early_blight",
+      "source_dataset": "PlantVillage",
+      "original_file": "1d4fc5d0-fee6-40bf-8e7b-e1598ea64161___RS_Early.B 8912.JPG"
+    },
+    {
+      "filename": "Potato___Early_blight_02.jpg",
+      "crop": "Potato",
+      "disease": "Early blight",
+      "class": "Potato___Early_blight",
+      "source_dataset": "PlantVillage",
+      "original_file": "9541d815-f209-4f13-892e-ca4e97ae5d8e___RS_Early.B 8981.JPG"
+    },
+    {
+      "filename": "Potato___Early_blight_03.jpg",
+      "crop": "Potato",
+      "disease": "Early blight",
+      "class": "Potato___Early_blight",
+      "source_dataset": "PlantDoc",
+      "original_file": "Blght_crop_24.jpg"
+    },
+    {
+      "filename": "Potato___Early_blight_04.jpg",
+      "crop": "Potato",
+      "disease": "Early blight",
+      "class": "Potato___Early_blight",
+      "source_dataset": "PlantDoc",
+      "original_file": "potato-early-blight-alternaria-alternata-lesions-on-potato-leaf-XDF64E_crop_4397.jpg"
+    },
+    {
+      "filename": "Potato___Early_blight_05.jpg",
+      "crop": "Potato",
+      "disease": "Early blight",
+      "class": "Potato___Early_blight",
+      "source_dataset": "PlantDoc",
+      "original_file": "potatoaltkc_crop_4498.jpg"
+    },
+    {
+      "filename": "Potato___Late_blight_01.jpg",
+      "crop": "Potato",
+      "disease": "Late blight",
+      "class": "Potato___Late_blight",
+      "source_dataset": "PlantVillage",
+      "original_file": "ecfc161f-11f6-449f-80c1-1b0254f5179a___RS_LB 4279.JPG"
+    },
+    {
+      "filename": "Potato___Late_blight_02.jpg",
+      "crop": "Potato",
+      "disease": "Late blight",
+      "class": "Potato___Late_blight",
+      "source_dataset": "PlantVillage",
+      "original_file": "227f2f04-4d59-48d9-958d-5cccc70d3f2b___RS_LB 2772.JPG"
+    },
+    {
+      "filename": "Potato___Late_blight_03.jpg",
+      "crop": "Potato",
+      "disease": "Late blight",
+      "class": "Potato___Late_blight",
+      "source_dataset": "PlantDoc",
+      "original_file": "potato-late-blight-symptom-on-leaves-PGB5H9_crop_4430.jpg"
+    },
+    {
+      "filename": "Potato___Late_blight_04.jpg",
+      "crop": "Potato",
+      "disease": "Late blight",
+      "class": "Potato___Late_blight",
+      "source_dataset": "PlantVillage",
+      "original_file": "84559c6d-0589-4d8d-8fc3-a818b067f85c___RS_LB 4608.JPG"
+    },
+    {
+      "filename": "Potato___Late_blight_05.jpg",
+      "crop": "Potato",
+      "disease": "Late blight",
+      "class": "Potato___Late_blight",
+      "source_dataset": "PlantVillage",
+      "original_file": "af13137c-1561-4c1c-b85b-5ec8930f2b38___RS_LB 5425.JPG"
+    },
+    {
+      "filename": "Potato___healthy_01.jpg",
+      "crop": "Potato",
+      "disease": "healthy",
+      "class": "Potato___healthy",
+      "source_dataset": "PlantVillage",
+      "original_file": "170f1f57-0fd4-421f-9c82-3b1804be63ad___RS_HL 1771.JPG"
+    },
+    {
+      "filename": "Potato___healthy_02.jpg",
+      "crop": "Potato",
+      "disease": "healthy",
+      "class": "Potato___healthy",
+      "source_dataset": "PlantVillage",
+      "original_file": "00fc2ee5-729f-4757-8aeb-65c3355874f2___RS_HL 1864.JPG"
+    },
+    {
+      "filename": "Potato___healthy_03.jpg",
+      "crop": "Potato",
+      "disease": "healthy",
+      "class": "Potato___healthy",
+      "source_dataset": "PlantVillage",
+      "original_file": "4bbccfb6-5720-4c80-9b37-0c3ed8999c9f___RS_HL 1791.JPG"
+    },
+    {
+      "filename": "Potato___healthy_04.jpg",
+      "crop": "Potato",
+      "disease": "healthy",
+      "class": "Potato___healthy",
+      "source_dataset": "PlantVillage",
+      "original_file": "2ccb9ee9-faac-4d32-9af5-29497fa2e028___RS_HL 1837.JPG"
+    },
+    {
+      "filename": "Potato___healthy_05.jpg",
+      "crop": "Potato",
+      "disease": "healthy",
+      "class": "Potato___healthy",
+      "source_dataset": "PlantVillage",
+      "original_file": "1dcfeaa9-006d-470c-b3e5-d67609d07d4e___RS_HL 1808.JPG"
+    },
+    {
+      "filename": "Raspberry___healthy_01.jpg",
+      "crop": "Raspberry",
+      "disease": "healthy",
+      "class": "Raspberry___healthy",
+      "source_dataset": "PlantVillage",
+      "original_file": "1875f778-fa4f-472a-adbc-88dd033011a7___Mary_HL 6292.JPG"
+    },
+    {
+      "filename": "Raspberry___healthy_02.jpg",
+      "crop": "Raspberry",
+      "disease": "healthy",
+      "class": "Raspberry___healthy",
+      "source_dataset": "PlantVillage",
+      "original_file": "168f4f5b-4a8a-4fec-a0fa-a54e182d7b00___Mary_HL 9198.JPG"
+    },
+    {
+      "filename": "Raspberry___healthy_03.jpg",
+      "crop": "Raspberry",
+      "disease": "healthy",
+      "class": "Raspberry___healthy",
+      "source_dataset": "PlantVillage",
+      "original_file": "2d98e51f-8702-4309-944b-e196c2ec5275___Mary_HL 6241.JPG"
+    },
+    {
+      "filename": "Raspberry___healthy_04.jpg",
+      "crop": "Raspberry",
+      "disease": "healthy",
+      "class": "Raspberry___healthy",
+      "source_dataset": "PlantDoc",
+      "original_file": "Raspberry-leaf-and-thimbleberry-leaf_crop_1476.jpg"
+    },
+    {
+      "filename": "Raspberry___healthy_05.jpg",
+      "crop": "Raspberry",
+      "disease": "healthy",
+      "class": "Raspberry___healthy",
+      "source_dataset": "PlantVillage",
+      "original_file": "68c91797-4323-4a34-a203-8393cdf3889b___Mary_HL 9143.JPG"
+    },
+    {
+      "filename": "Soybean___healthy_01.jpg",
+      "crop": "Soybean",
+      "disease": "healthy",
+      "class": "Soybean___healthy",
+      "source_dataset": "PlantDoc",
+      "original_file": "kdeficiency2_crop_3613.jpg"
+    },
+    {
+      "filename": "Soybean___healthy_02.jpg",
+      "crop": "Soybean",
+      "disease": "healthy",
+      "class": "Soybean___healthy",
+      "source_dataset": "PlantVillage",
+      "original_file": "5ca7a6be-9083-4400-ab67-9cc243ce3c96___RS_HL 5765 1.JPG"
+    },
+    {
+      "filename": "Soybean___healthy_03.jpg",
+      "crop": "Soybean",
+      "disease": "healthy",
+      "class": "Soybean___healthy",
+      "source_dataset": "PlantVillage",
+      "original_file": "a4742cbd-0cae-4f56-b816-3574e35ac8d1___RS_HL 2758.JPG"
+    },
+    {
+      "filename": "Soybean___healthy_04.jpg",
+      "crop": "Soybean",
+      "disease": "healthy",
+      "class": "Soybean___healthy",
+      "source_dataset": "PlantVillage",
+      "original_file": "22f66c7b-ba7e-4c19-b676-268f0201b49c___RS_HL 6176.JPG"
+    },
+    {
+      "filename": "Soybean___healthy_05.jpg",
+      "crop": "Soybean",
+      "disease": "healthy",
+      "class": "Soybean___healthy",
+      "source_dataset": "PlantVillage",
+      "original_file": "fee8ab43-ac11-4c57-87bc-25557bcd3b1a___RS_HL 5795 1.JPG"
+    },
+    {
+      "filename": "Squash___Powdery_mildew_01.jpg",
+      "crop": "Squash",
+      "disease": "Powdery mildew",
+      "class": "Squash___Powdery_mildew",
+      "source_dataset": "PlantVillage",
+      "original_file": "f9f293a8-8c9c-44b9-bd70-639ff3e9a795___MD_Powd.M 9893.JPG"
+    },
+    {
+      "filename": "Squash___Powdery_mildew_02.jpg",
+      "crop": "Squash",
+      "disease": "Powdery mildew",
+      "class": "Squash___Powdery_mildew",
+      "source_dataset": "PlantVillage",
+      "original_file": "8d287d90-02ee-4e3c-aaf8-f83aa40370a4___UMD_Powd.M 9646.JPG"
+    },
+    {
+      "filename": "Squash___Powdery_mildew_03.jpg",
+      "crop": "Squash",
+      "disease": "Powdery mildew",
+      "class": "Squash___Powdery_mildew",
+      "source_dataset": "PlantVillage",
+      "original_file": "91be67d1-c5c8-4e6e-84dd-ebca2937dfaa___UMD_Powd.M 0309.JPG"
+    },
+    {
+      "filename": "Squash___Powdery_mildew_04.jpg",
+      "crop": "Squash",
+      "disease": "Powdery mildew",
+      "class": "Squash___Powdery_mildew",
+      "source_dataset": "PlantVillage",
+      "original_file": "cafbbac7-4849-4663-8c3e-282d354fa500___MD_Powd.M 1029.JPG"
+    },
+    {
+      "filename": "Squash___Powdery_mildew_05.jpg",
+      "crop": "Squash",
+      "disease": "Powdery mildew",
+      "class": "Squash___Powdery_mildew",
+      "source_dataset": "PlantVillage",
+      "original_file": "7e1ea4cb-9100-438d-8996-95334773d945___MD_Powd.M 0089.JPG"
+    },
+    {
+      "filename": "Strawberry___Leaf_scorch_01.jpg",
+      "crop": "Strawberry",
+      "disease": "Leaf scorch",
+      "class": "Strawberry___Leaf_scorch",
+      "source_dataset": "PlantVillage",
+      "original_file": "7ba6bc57-b13e-4715-ab80-955bcd6eeec5___RS_L.Scorch 0940.JPG"
+    },
+    {
+      "filename": "Strawberry___Leaf_scorch_02.jpg",
+      "crop": "Strawberry",
+      "disease": "Leaf scorch",
+      "class": "Strawberry___Leaf_scorch",
+      "source_dataset": "PlantVillage",
+      "original_file": "815a964f-f313-4acd-8b42-91e21f0cacb9___RS_L.Scorch 1397.JPG"
+    },
+    {
+      "filename": "Strawberry___Leaf_scorch_03.jpg",
+      "crop": "Strawberry",
+      "disease": "Leaf scorch",
+      "class": "Strawberry___Leaf_scorch",
+      "source_dataset": "PlantVillage",
+      "original_file": "94b00c87-de7a-4a53-876d-48cb43106f72___RS_L.Scorch 0143.JPG"
+    },
+    {
+      "filename": "Strawberry___Leaf_scorch_04.jpg",
+      "crop": "Strawberry",
+      "disease": "Leaf scorch",
+      "class": "Strawberry___Leaf_scorch",
+      "source_dataset": "PlantVillage",
+      "original_file": "5cf747a2-76b2-4949-83eb-e25812327d41___RS_L.Scorch 1427.JPG"
+    },
+    {
+      "filename": "Strawberry___Leaf_scorch_05.jpg",
+      "crop": "Strawberry",
+      "disease": "Leaf scorch",
+      "class": "Strawberry___Leaf_scorch",
+      "source_dataset": "PlantVillage",
+      "original_file": "b4087a7d-dc29-482f-9be0-ccb61e885577___RS_L.Scorch 1412.JPG"
+    },
+    {
+      "filename": "Strawberry___healthy_01.jpg",
+      "crop": "Strawberry",
+      "disease": "healthy",
+      "class": "Strawberry___healthy",
+      "source_dataset": "PlantVillage",
+      "original_file": "90ffc406-a0e7-4f94-98a9-3813e3ce6cc3___RS_HL 1898.JPG"
+    },
+    {
+      "filename": "Strawberry___healthy_02.jpg",
+      "crop": "Strawberry",
+      "disease": "healthy",
+      "class": "Strawberry___healthy",
+      "source_dataset": "PlantDoc",
+      "original_file": "single-green-strawberry-leaf-isolated-white-12750533_crop_4960.jpg"
+    },
+    {
+      "filename": "Strawberry___healthy_03.jpg",
+      "crop": "Strawberry",
+      "disease": "healthy",
+      "class": "Strawberry___healthy",
+      "source_dataset": "PlantVillage",
+      "original_file": "29050f21-a393-473e-9f9c-7fd99feef9a7___RS_HL 4533.JPG"
+    },
+    {
+      "filename": "Strawberry___healthy_04.jpg",
+      "crop": "Strawberry",
+      "disease": "healthy",
+      "class": "Strawberry___healthy",
+      "source_dataset": "PlantVillage",
+      "original_file": "bf2896d7-8289-4198-ae01-c8870ccda768___RS_HL 2204.JPG"
+    },
+    {
+      "filename": "Strawberry___healthy_05.jpg",
+      "crop": "Strawberry",
+      "disease": "healthy",
+      "class": "Strawberry___healthy",
+      "source_dataset": "PlantVillage",
+      "original_file": "5e5147e3-ba21-4afa-a32b-bb3453c72944___RS_HL 4450.JPG"
+    },
+    {
+      "filename": "Tomato___Bacterial_spot_01.jpg",
+      "crop": "Tomato",
+      "disease": "Bacterial spot",
+      "class": "Tomato___Bacterial_spot",
+      "source_dataset": "PlantVillage",
+      "original_file": "03ca5883-e9d6-4f88-81d8-90176fcc5413___GCREC_Bact.Sp 3013.JPG"
+    },
+    {
+      "filename": "Tomato___Bacterial_spot_02.jpg",
+      "crop": "Tomato",
+      "disease": "Bacterial spot",
+      "class": "Tomato___Bacterial_spot",
+      "source_dataset": "PlantVillage",
+      "original_file": "a9081e18-5a97-428a-af5d-6788d430d152___GCREC_Bact.Sp 3347.JPG"
+    },
+    {
+      "filename": "Tomato___Bacterial_spot_03.jpg",
+      "crop": "Tomato",
+      "disease": "Bacterial spot",
+      "class": "Tomato___Bacterial_spot",
+      "source_dataset": "PlantDoc",
+      "original_file": "10-3-bacterial-speck-on-tomato-RON_crop_197.jpg"
+    },
+    {
+      "filename": "Tomato___Bacterial_spot_04.jpg",
+      "crop": "Tomato",
+      "disease": "Bacterial spot",
+      "class": "Tomato___Bacterial_spot",
+      "source_dataset": "PlantVillage",
+      "original_file": "52a7b480-2795-4a77-b301-1df31e4e4718___GCREC_Bact.Sp 6118.JPG"
+    },
+    {
+      "filename": "Tomato___Bacterial_spot_05.jpg",
+      "crop": "Tomato",
+      "disease": "Bacterial spot",
+      "class": "Tomato___Bacterial_spot",
+      "source_dataset": "PlantVillage",
+      "original_file": "7515d9e0-f3a4-4a49-9d6a-77cfa40a16a4___GCREC_Bact.Sp 3655.JPG"
+    },
+    {
+      "filename": "Tomato___Early_blight_01.jpg",
+      "crop": "Tomato",
+      "disease": "Early blight",
+      "class": "Tomato___Early_blight",
+      "source_dataset": "PlantVillage",
+      "original_file": "c66ca8bd-a004-4efb-a66c-3be5168aaaca___RS_Erly.B 7826.JPG"
+    },
+    {
+      "filename": "Tomato___Early_blight_02.jpg",
+      "crop": "Tomato",
+      "disease": "Early blight",
+      "class": "Tomato___Early_blight",
+      "source_dataset": "PlantVillage",
+      "original_file": "2ef629c7-3366-41b5-a1b7-0e3bcb3ac28c___RS_Erly.B 9395.JPG"
+    },
+    {
+      "filename": "Tomato___Early_blight_03.jpg",
+      "crop": "Tomato",
+      "disease": "Early blight",
+      "class": "Tomato___Early_blight",
+      "source_dataset": "PlantVillage",
+      "original_file": "4deeae7f-b339-4d5b-969c-b69ea27c1636___RS_Erly.B 7736.JPG"
+    },
+    {
+      "filename": "Tomato___Early_blight_04.jpg",
+      "crop": "Tomato",
+      "disease": "Early blight",
+      "class": "Tomato___Early_blight",
+      "source_dataset": "PlantVillage",
+      "original_file": "3069555f-45e9-4208-bc5e-015ce47e34e2___RS_Erly.B 7663.JPG"
+    },
+    {
+      "filename": "Tomato___Early_blight_05.jpg",
+      "crop": "Tomato",
+      "disease": "Early blight",
+      "class": "Tomato___Early_blight",
+      "source_dataset": "PlantVillage",
+      "original_file": "8f709c55-ee65-4bb0-9291-6d5d79033c3f___RS_Erly.B 9603.JPG"
+    },
+    {
+      "filename": "Tomato___Late_blight_01.jpg",
+      "crop": "Tomato",
+      "disease": "Late blight",
+      "class": "Tomato___Late_blight",
+      "source_dataset": "PlantVillage",
+      "original_file": "3e01dcb7-e660-4403-861a-59a44d572565___GHLB Leaf 2 Day 7.JPG"
+    },
+    {
+      "filename": "Tomato___Late_blight_02.jpg",
+      "crop": "Tomato",
+      "disease": "Late blight",
+      "class": "Tomato___Late_blight",
+      "source_dataset": "PlantVillage",
+      "original_file": "149b8460-2bf2-409a-ad61-b8f34d33cd82___RS_Late.B 6826.JPG"
+    },
+    {
+      "filename": "Tomato___Late_blight_03.jpg",
+      "crop": "Tomato",
+      "disease": "Late blight",
+      "class": "Tomato___Late_blight",
+      "source_dataset": "PlantVillage",
+      "original_file": "1f8743b6-f385-4464-9e41-48bd9fe85637___GHLB2 Leaf 8914.JPG"
+    },
+    {
+      "filename": "Tomato___Late_blight_04.jpg",
+      "crop": "Tomato",
+      "disease": "Late blight",
+      "class": "Tomato___Late_blight",
+      "source_dataset": "PlantVillage",
+      "original_file": "938a5ed3-127f-4e05-8e96-9d2225d094c7___GHLB2 Leaf 8784.JPG"
+    },
+    {
+      "filename": "Tomato___Late_blight_05.jpg",
+      "crop": "Tomato",
+      "disease": "Late blight",
+      "class": "Tomato___Late_blight",
+      "source_dataset": "PlantVillage",
+      "original_file": "caf4164d-4f6f-4a75-b394-924f89e0d040___GHLB2 Leaf 8759.JPG"
+    },
+    {
+      "filename": "Tomato___Leaf_Mold_01.jpg",
+      "crop": "Tomato",
+      "disease": "Leaf Mold",
+      "class": "Tomato___Leaf_Mold",
+      "source_dataset": "PlantVillage",
+      "original_file": "55aaf81e-1a23-419c-9b20-a24f5ab5e0ec___Crnl_L.Mold 6549.JPG"
+    },
+    {
+      "filename": "Tomato___Leaf_Mold_02.jpg",
+      "crop": "Tomato",
+      "disease": "Leaf Mold",
+      "class": "Tomato___Leaf_Mold",
+      "source_dataset": "PlantVillage",
+      "original_file": "2f49ea7d-edf2-48bd-9598-449d8c83d0a0___Crnl_L.Mold 9154.JPG"
+    },
+    {
+      "filename": "Tomato___Leaf_Mold_03.jpg",
+      "crop": "Tomato",
+      "disease": "Leaf Mold",
+      "class": "Tomato___Leaf_Mold",
+      "source_dataset": "PlantVillage",
+      "original_file": "0bc8fe4f-f614-43ce-bb2f-e3c0ef79f148___Crnl_L.Mold 8907.JPG"
+    },
+    {
+      "filename": "Tomato___Leaf_Mold_04.jpg",
+      "crop": "Tomato",
+      "disease": "Leaf Mold",
+      "class": "Tomato___Leaf_Mold",
+      "source_dataset": "PlantVillage",
+      "original_file": "d23729f0-3d5c-4e13-abd2-5cc7f21a51ee___Crnl_L.Mold 6976.JPG"
+    },
+    {
+      "filename": "Tomato___Leaf_Mold_05.jpg",
+      "crop": "Tomato",
+      "disease": "Leaf Mold",
+      "class": "Tomato___Leaf_Mold",
+      "source_dataset": "PlantDoc",
+      "original_file": "tomato_leaf-mold_01_zoom_crop_5977.jpg"
+    },
+    {
+      "filename": "Tomato___Septoria_leaf_spot_01.jpg",
+      "crop": "Tomato",
+      "disease": "Septoria leaf spot",
+      "class": "Tomato___Septoria_leaf_spot",
+      "source_dataset": "PlantVillage",
+      "original_file": "33955624-749a-442a-bf18-6d7a21130d72___JR_Sept.L.S 8398.JPG"
+    },
+    {
+      "filename": "Tomato___Septoria_leaf_spot_02.jpg",
+      "crop": "Tomato",
+      "disease": "Septoria leaf spot",
+      "class": "Tomato___Septoria_leaf_spot",
+      "source_dataset": "PlantVillage",
+      "original_file": "2f5e144b-cf8f-4882-8ee5-10eafb8778cc___Matt.S_CG 7579.JPG"
+    },
+    {
+      "filename": "Tomato___Septoria_leaf_spot_03.jpg",
+      "crop": "Tomato",
+      "disease": "Septoria leaf spot",
+      "class": "Tomato___Septoria_leaf_spot",
+      "source_dataset": "PlantVillage",
+      "original_file": "d43c1014-1f3d-4e80-bd34-e1f5243ac21e___JR_Sept.L.S 2664.JPG"
+    },
+    {
+      "filename": "Tomato___Septoria_leaf_spot_04.jpg",
+      "crop": "Tomato",
+      "disease": "Septoria leaf spot",
+      "class": "Tomato___Septoria_leaf_spot",
+      "source_dataset": "PlantVillage",
+      "original_file": "563ce6e0-3d79-428c-b30f-3f3dd1e9b4e4___Matt.S_CG 6536.JPG"
+    },
+    {
+      "filename": "Tomato___Septoria_leaf_spot_05.jpg",
+      "crop": "Tomato",
+      "disease": "Septoria leaf spot",
+      "class": "Tomato___Septoria_leaf_spot",
+      "source_dataset": "PlantDoc",
+      "original_file": "140714+%2811%29.JPG_crop_318.jpg"
+    },
+    {
+      "filename": "Tomato___Spider_mites Two-spotted_spider_mite_01.jpg",
+      "crop": "Tomato",
+      "disease": "Spider mites Two-spotted spider mite",
+      "class": "Tomato___Spider_mites Two-spotted_spider_mite",
+      "source_dataset": "PlantVillage",
+      "original_file": "63384c82-1527-482a-93e4-51841ad0506c___Com.G_SpM_FL 1373.JPG"
+    },
+    {
+      "filename": "Tomato___Spider_mites Two-spotted_spider_mite_02.jpg",
+      "crop": "Tomato",
+      "disease": "Spider mites Two-spotted spider mite",
+      "class": "Tomato___Spider_mites Two-spotted_spider_mite",
+      "source_dataset": "PlantVillage",
+      "original_file": "19e981b0-9509-4564-8ece-284d1f6b497d___Com.G_SpM_FL 1288.JPG"
+    },
+    {
+      "filename": "Tomato___Spider_mites Two-spotted_spider_mite_03.jpg",
+      "crop": "Tomato",
+      "disease": "Spider mites Two-spotted spider mite",
+      "class": "Tomato___Spider_mites Two-spotted_spider_mite",
+      "source_dataset": "PlantVillage",
+      "original_file": "c044173c-b055-4014-91e5-d827a1a65851___Com.G_SpM_FL 9395.JPG"
+    },
+    {
+      "filename": "Tomato___Spider_mites Two-spotted_spider_mite_04.jpg",
+      "crop": "Tomato",
+      "disease": "Spider mites Two-spotted spider mite",
+      "class": "Tomato___Spider_mites Two-spotted_spider_mite",
+      "source_dataset": "PlantVillage",
+      "original_file": "fc135130-76fe-4249-a36f-8aa02129c7c7___Com.G_SpM_FL 9366.JPG"
+    },
+    {
+      "filename": "Tomato___Spider_mites Two-spotted_spider_mite_05.jpg",
+      "crop": "Tomato",
+      "disease": "Spider mites Two-spotted spider mite",
+      "class": "Tomato___Spider_mites Two-spotted_spider_mite",
+      "source_dataset": "PlantVillage",
+      "original_file": "ff20d775-59a6-437c-9039-f72d07aa4484___Com.G_SpM_FL 8524.JPG"
+    },
+    {
+      "filename": "Tomato___Target_Spot_01.jpg",
+      "crop": "Tomato",
+      "disease": "Target Spot",
+      "class": "Tomato___Target_Spot",
+      "source_dataset": "PlantVillage",
+      "original_file": "2d842c15-c1cd-4f2b-9e12-27855abb9758___Com.G_TgS_FL 0812.JPG"
+    },
+    {
+      "filename": "Tomato___Target_Spot_02.jpg",
+      "crop": "Tomato",
+      "disease": "Target Spot",
+      "class": "Tomato___Target_Spot",
+      "source_dataset": "PlantVillage",
+      "original_file": "d20b4cf8-d03b-43fe-b3b2-3696f4bf3197___Com.G_TgS_FL 9988.JPG"
+    },
+    {
+      "filename": "Tomato___Target_Spot_03.jpg",
+      "crop": "Tomato",
+      "disease": "Target Spot",
+      "class": "Tomato___Target_Spot",
+      "source_dataset": "PlantVillage",
+      "original_file": "2a1190a6-0661-4066-a05d-2b6486788f10___Com.G_TgS_FL 8239.JPG"
+    },
+    {
+      "filename": "Tomato___Target_Spot_04.jpg",
+      "crop": "Tomato",
+      "disease": "Target Spot",
+      "class": "Tomato___Target_Spot",
+      "source_dataset": "PlantVillage",
+      "original_file": "cebd039f-f264-476f-bb0c-2a5feafc0054___Com.G_TgS_FL 0957.JPG"
+    },
+    {
+      "filename": "Tomato___Target_Spot_05.jpg",
+      "crop": "Tomato",
+      "disease": "Target Spot",
+      "class": "Tomato___Target_Spot",
+      "source_dataset": "PlantVillage",
+      "original_file": "0da91f19-f1bb-4129-b122-459648794512___Com.G_TgS_FL 8276.JPG"
+    },
+    {
+      "filename": "Tomato___Tomato_Yellow_Leaf_Curl_Virus_01.jpg",
+      "crop": "Tomato",
+      "disease": "Tomato Yellow Leaf Curl Virus",
+      "class": "Tomato___Tomato_Yellow_Leaf_Curl_Virus",
+      "source_dataset": "PlantVillage",
+      "original_file": "57970cb7-5626-4892-b98e-01cb68d81972___YLCV_GCREC 2191.JPG"
+    },
+    {
+      "filename": "Tomato___Tomato_Yellow_Leaf_Curl_Virus_02.jpg",
+      "crop": "Tomato",
+      "disease": "Tomato Yellow Leaf Curl Virus",
+      "class": "Tomato___Tomato_Yellow_Leaf_Curl_Virus",
+      "source_dataset": "PlantVillage",
+      "original_file": "479eee9b-f4c5-45a6-90f6-6f7fbd4069eb___UF.GRC_YLCV_Lab 09470.JPG"
+    },
+    {
+      "filename": "Tomato___Tomato_Yellow_Leaf_Curl_Virus_03.jpg",
+      "crop": "Tomato",
+      "disease": "Tomato Yellow Leaf Curl Virus",
+      "class": "Tomato___Tomato_Yellow_Leaf_Curl_Virus",
+      "source_dataset": "PlantVillage",
+      "original_file": "95663aad-c162-439e-b12e-9f9061b9474e___UF.GRC_YLCV_Lab 08463.JPG"
+    },
+    {
+      "filename": "Tomato___Tomato_Yellow_Leaf_Curl_Virus_04.jpg",
+      "crop": "Tomato",
+      "disease": "Tomato Yellow Leaf Curl Virus",
+      "class": "Tomato___Tomato_Yellow_Leaf_Curl_Virus",
+      "source_dataset": "PlantVillage",
+      "original_file": "9bbf5b8a-6a57-4e96-86d6-fd64be111993___UF.GRC_YLCV_Lab 01462.JPG"
+    },
+    {
+      "filename": "Tomato___Tomato_Yellow_Leaf_Curl_Virus_05.jpg",
+      "crop": "Tomato",
+      "disease": "Tomato Yellow Leaf Curl Virus",
+      "class": "Tomato___Tomato_Yellow_Leaf_Curl_Virus",
+      "source_dataset": "PlantVillage",
+      "original_file": "aca5190a-b4d2-4b14-b298-4c3c526ef4e8___YLCV_NREC 2018.JPG"
+    },
+    {
+      "filename": "Tomato___Tomato_mosaic_virus_01.jpg",
+      "crop": "Tomato",
+      "disease": "Tomato mosaic virus",
+      "class": "Tomato___Tomato_mosaic_virus",
+      "source_dataset": "PlantDoc",
+      "original_file": "4b0bfd_df5a85f728c74cecbe908a24feadab02_crop_1021.jpg"
+    },
+    {
+      "filename": "Tomato___Tomato_mosaic_virus_02.jpg",
+      "crop": "Tomato",
+      "disease": "Tomato mosaic virus",
+      "class": "Tomato___Tomato_mosaic_virus",
+      "source_dataset": "PlantDoc",
+      "original_file": "tomato_mosaic_virus_crop_6008.jpg"
+    },
+    {
+      "filename": "Tomato___Tomato_mosaic_virus_03.jpg",
+      "crop": "Tomato",
+      "disease": "Tomato mosaic virus",
+      "class": "Tomato___Tomato_mosaic_virus",
+      "source_dataset": "PlantVillage",
+      "original_file": "7c9939ff-c133-460f-a883-26ecb38aa594___PSU_CG 2340.JPG"
+    },
+    {
+      "filename": "Tomato___Tomato_mosaic_virus_04.jpg",
+      "crop": "Tomato",
+      "disease": "Tomato mosaic virus",
+      "class": "Tomato___Tomato_mosaic_virus",
+      "source_dataset": "PlantVillage",
+      "original_file": "86965ac5-b790-4218-a3c6-216d10da5211___PSU_CG 2066.JPG"
+    },
+    {
+      "filename": "Tomato___Tomato_mosaic_virus_05.jpg",
+      "crop": "Tomato",
+      "disease": "Tomato mosaic virus",
+      "class": "Tomato___Tomato_mosaic_virus",
+      "source_dataset": "PlantVillage",
+      "original_file": "6e67c953-5934-439c-8303-e1762793a36a___PSU_CG 2181.JPG"
+    },
+    {
+      "filename": "Tomato___healthy_01.jpg",
+      "crop": "Tomato",
+      "disease": "healthy",
+      "class": "Tomato___healthy",
+      "source_dataset": "PlantVillage",
+      "original_file": "958b8eb8-7004-434a-ad02-e62ff64dded0___RS_HL 0276.JPG"
+    },
+    {
+      "filename": "Tomato___healthy_02.jpg",
+      "crop": "Tomato",
+      "disease": "healthy",
+      "class": "Tomato___healthy",
+      "source_dataset": "PlantVillage",
+      "original_file": "3a1c6737-c9ff-44dc-9014-954753732160___GH_HL Leaf 406.1.JPG"
+    },
+    {
+      "filename": "Tomato___healthy_03.jpg",
+      "crop": "Tomato",
+      "disease": "healthy",
+      "class": "Tomato___healthy",
+      "source_dataset": "PlantVillage",
+      "original_file": "08c1c1e5-bb78-44d5-b46f-a86386c0ef3b___RS_HL 0063.JPG"
+    },
+    {
+      "filename": "Tomato___healthy_04.jpg",
+      "crop": "Tomato",
+      "disease": "healthy",
+      "class": "Tomato___healthy",
+      "source_dataset": "PlantVillage",
+      "original_file": "d53448cd-ddd7-4dd6-a657-c60bde629130___RS_HL 0190.JPG"
+    },
+    {
+      "filename": "Tomato___healthy_05.jpg",
+      "crop": "Tomato",
+      "disease": "healthy",
+      "class": "Tomato___healthy",
+      "source_dataset": "PlantVillage",
+      "original_file": "9b0e031b-27c2-4c62-8923-ccc3ce5a4048___GH_HL Leaf 401.1.JPG"
+    },
+    {
+      "filename": "Pear___curl_01.jpg",
+      "crop": "Pear",
+      "disease": "curl",
+      "class": "Pear___curl",
+      "source_dataset": "DiaMOS_Pear",
+      "original_file": "u3025.jpg"
+    },
+    {
+      "filename": "Pear___curl_02.jpg",
+      "crop": "Pear",
+      "disease": "curl",
+      "class": "Pear___curl",
+      "source_dataset": "DiaMOS_Pear",
+      "original_file": "u3115.jpg"
+    },
+    {
+      "filename": "Pear___curl_03.jpg",
+      "crop": "Pear",
+      "disease": "curl",
+      "class": "Pear___curl",
+      "source_dataset": "DiaMOS_Pear",
+      "original_file": "u3085.jpg"
+    },
+    {
+      "filename": "Pear___curl_04.jpg",
+      "crop": "Pear",
+      "disease": "curl",
+      "class": "Pear___curl",
+      "source_dataset": "DiaMOS_Pear",
+      "original_file": "u3119.jpg"
+    },
+    {
+      "filename": "Pear___curl_05.jpg",
+      "crop": "Pear",
+      "disease": "curl",
+      "class": "Pear___curl",
+      "source_dataset": "DiaMOS_Pear",
+      "original_file": "u3021.jpg"
+    },
+    {
+      "filename": "Pear___healthy_01.jpg",
+      "crop": "Pear",
+      "disease": "healthy",
+      "class": "Pear___healthy",
+      "source_dataset": "DiaMOS_Pear",
+      "original_file": "h22.jpg"
+    },
+    {
+      "filename": "Pear___healthy_02.jpg",
+      "crop": "Pear",
+      "disease": "healthy",
+      "class": "Pear___healthy",
+      "source_dataset": "DiaMOS_Pear",
+      "original_file": "h25.jpg"
+    },
+    {
+      "filename": "Pear___healthy_03.jpg",
+      "crop": "Pear",
+      "disease": "healthy",
+      "class": "Pear___healthy",
+      "source_dataset": "DiaMOS_Pear",
+      "original_file": "h10.jpg"
+    },
+    {
+      "filename": "Pear___healthy_04.jpg",
+      "crop": "Pear",
+      "disease": "healthy",
+      "class": "Pear___healthy",
+      "source_dataset": "DiaMOS_Pear",
+      "original_file": "h23.jpg"
+    },
+    {
+      "filename": "Pear___healthy_05.jpg",
+      "crop": "Pear",
+      "disease": "healthy",
+      "class": "Pear___healthy",
+      "source_dataset": "DiaMOS_Pear",
+      "original_file": "h7.jpg"
+    },
+    {
+      "filename": "Pear___slug_01.jpg",
+      "crop": "Pear",
+      "disease": "slug",
+      "class": "Pear___slug",
+      "source_dataset": "DiaMOS_Pear",
+      "original_file": "u1512.jpg"
+    },
+    {
+      "filename": "Pear___slug_02.jpg",
+      "crop": "Pear",
+      "disease": "slug",
+      "class": "Pear___slug",
+      "source_dataset": "DiaMOS_Pear",
+      "original_file": "u1946.jpg"
+    },
+    {
+      "filename": "Pear___slug_03.jpg",
+      "crop": "Pear",
+      "disease": "slug",
+      "class": "Pear___slug",
+      "source_dataset": "DiaMOS_Pear",
+      "original_file": "u936.jpg"
+    },
+    {
+      "filename": "Pear___slug_04.jpg",
+      "crop": "Pear",
+      "disease": "slug",
+      "class": "Pear___slug",
+      "source_dataset": "DiaMOS_Pear",
+      "original_file": "u1317.jpg"
+    },
+    {
+      "filename": "Pear___slug_05.jpg",
+      "crop": "Pear",
+      "disease": "slug",
+      "class": "Pear___slug",
+      "source_dataset": "DiaMOS_Pear",
+      "original_file": "u1836.jpg"
+    },
+    {
+      "filename": "Pear___spot_01.jpg",
+      "crop": "Pear",
+      "disease": "spot",
+      "class": "Pear___spot",
+      "source_dataset": "DiaMOS_Pear",
+      "original_file": "u2221.jpg"
+    },
+    {
+      "filename": "Pear___spot_02.jpg",
+      "crop": "Pear",
+      "disease": "spot",
+      "class": "Pear___spot",
+      "source_dataset": "DiaMOS_Pear",
+      "original_file": "u384.jpg"
+    },
+    {
+      "filename": "Pear___spot_03.jpg",
+      "crop": "Pear",
+      "disease": "spot",
+      "class": "Pear___spot",
+      "source_dataset": "DiaMOS_Pear",
+      "original_file": "u552.jpg"
+    },
+    {
+      "filename": "Pear___spot_04.jpg",
+      "crop": "Pear",
+      "disease": "spot",
+      "class": "Pear___spot",
+      "source_dataset": "DiaMOS_Pear",
+      "original_file": "u2411.jpg"
+    },
+    {
+      "filename": "Pear___spot_05.jpg",
+      "crop": "Pear",
+      "disease": "spot",
+      "class": "Pear___spot",
+      "source_dataset": "DiaMOS_Pear",
+      "original_file": "u676.jpg"
+    }
+  ]
+}
