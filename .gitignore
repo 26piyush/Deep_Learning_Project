@@ -1,0 +1,113 @@
+# =====================================================================
+# Byte-compiled / optimized / DLL files
+# =====================================================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyd
+
+# =====================================================================
+# Virtual Environments
+# =====================================================================
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# =====================================================================
+# Datasets & Large Data (18 GB / 214,000+ files)
+# =====================================================================
+data/
+*.zip
+*.tar.gz
+*.tar
+
+# =====================================================================
+# Machine Learning Weights & Checkpoints (>100 MB GitHub Blockers)
+# =====================================================================
+# Ignore all model weight files across root and subdirectories
+*.pt
+*.pth
+*.onnx
+*.engine
+*.h5
+*.tflite
+*.safetensors
+*.ckpt
+*.weights
+
+# Specific model folders & archives
+models/*.pt
+models/archive/
+crop_health_model/*.pt
+yolov8n.pt
+
+# Allow git to track the empty models folder via .gitkeep
+!models/.gitkeep
+
+# =====================================================================
+# Training Runs & Logs (Ultralytics / YOLO / TensorBoard / WandB)
+# =====================================================================
+runs/
+wandb/
+*.log
+
+# =====================================================================
+# Archives & Heavy Experimental Dumps
+# =====================================================================
+archive/
+results/predictions/*.json
+*.tmp
+
+# =====================================================================
+# Operating System files
+# =====================================================================
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+
+# =====================================================================
+# Editor & IDE configurations
+# =====================================================================
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.project
+.pydevproject
+.settings/
+
+# =====================================================================
+# Jupyter Notebook checkpoints & Streamlit
+# =====================================================================
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+.streamlit/
+!/.streamlit/config.toml
+
+# =====================================================================
+# Secrets, Keys, and Environment Variables
+# =====================================================================
+.env
+.env.*
+*.key
+*.pem
+*.cert
+
+# =====================================================================
+# Testing & Code Quality Caches
+# =====================================================================
+.pytest_cache/
+.coverage
+htmlcov/

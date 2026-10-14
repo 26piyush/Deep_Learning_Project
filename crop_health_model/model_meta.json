@@ -1,0 +1,292 @@
+{
+  "idx_to_label": [
+    "Apple___Apple_scab",
+    "Apple___Black_rot",
+    "Apple___Cedar_apple_rust",
+    "Apple___healthy",
+    "Blueberry___healthy",
+    "Cherry___Powdery_mildew",
+    "Cherry___healthy",
+    "Corn___Cercospora_leaf_spot Gray_leaf_spot",
+    "Corn___Common_rust",
+    "Corn___Northern_Leaf_Blight",
+    "Corn___healthy",
+    "Grape___Black_rot",
+    "Grape___Esca_(Black_Measles)",
+    "Grape___Leaf_blight_(Isariopsis_Leaf_Spot)",
+    "Grape___healthy",
+    "Orange___Haunglongbing_(Citrus_greening)",
+    "Peach___Bacterial_spot",
+    "Peach___healthy",
+    "Pepper,_bell___Bacterial_spot",
+    "Pepper,_bell___healthy",
+    "Potato___Early_blight",
+    "Potato___Late_blight",
+    "Potato___healthy",
+    "Raspberry___healthy",
+    "Soybean___healthy",
+    "Squash___Powdery_mildew",
+    "Strawberry___Leaf_scorch",
+    "Strawberry___healthy",
+    "Tomato___Bacterial_spot",
+    "Tomato___Early_blight",
+    "Tomato___Late_blight",
+    "Tomato___Leaf_Mold",
+    "Tomato___Septoria_leaf_spot",
+    "Tomato___Spider_mites Two-spotted_spider_mite",
+    "Tomato___Target_Spot",
+    "Tomato___Tomato_Yellow_Leaf_Curl_Virus",
+    "Tomato___Tomato_mosaic_virus",
+    "Tomato___healthy"
+  ],
+  "idx_to_pair": [
+    {
+      "crop": "Apple",
+      "disease": "Apple_scab"
+    },
+    {
+      "crop": "Apple",
+      "disease": "Black_rot"
+    },
+    {
+      "crop": "Apple",
+      "disease": "Cedar_apple_rust"
+    },
+    {
+      "crop": "Apple",
+      "disease": "healthy"
+    },
+    {
+      "crop": "Blueberry",
+      "disease": "healthy"
+    },
+    {
+      "crop": "Cherry",
+      "disease": "Powdery_mildew"
+    },
+    {
+      "crop": "Cherry",
+      "disease": "healthy"
+    },
+    {
+      "crop": "Corn",
+      "disease": "Cercospora_leaf_spot Gray_leaf_spot"
+    },
+    {
+      "crop": "Corn",
+      "disease": "Common_rust"
+    },
+    {
+      "crop": "Corn",
+      "disease": "Northern_Leaf_Blight"
+    },
+    {
+      "crop": "Corn",
+      "disease": "healthy"
+    },
+    {
+      "crop": "Grape",
+      "disease": "Black_rot"
+    },
+    {
+      "crop": "Grape",
+      "disease": "Esca_(Black_Measles)"
+    },
+    {
+      "crop": "Grape",
+      "disease": "Leaf_blight_(Isariopsis_Leaf_Spot)"
+    },
+    {
+      "crop": "Grape",
+      "disease": "healthy"
+    },
+    {
+      "crop": "Orange",
+      "disease": "Haunglongbing_(Citrus_greening)"
+    },
+    {
+      "crop": "Peach",
+      "disease": "Bacterial_spot"
+    },
+    {
+      "crop": "Peach",
+      "disease": "healthy"
+    },
+    {
+      "crop": "Pepper,_bell",
+      "disease": "Bacterial_spot"
+    },
+    {
+      "crop": "Pepper,_bell",
+      "disease": "healthy"
+    },
+    {
+      "crop": "Potato",
+      "disease": "Early_blight"
+    },
+    {
+      "crop": "Potato",
+      "disease": "Late_blight"
+    },
+    {
+      "crop": "Potato",
+      "disease": "healthy"
+    },
+    {
+      "crop": "Raspberry",
+      "disease": "healthy"
+    },
+    {
+      "crop": "Soybean",
+      "disease": "healthy"
+    },
+    {
+      "crop": "Squash",
+      "disease": "Powdery_mildew"
+    },
+    {
+      "crop": "Strawberry",
+      "disease": "Leaf_scorch"
+    },
+    {
+      "crop": "Strawberry",
+      "disease": "healthy"
+    },
+    {
+      "crop": "Tomato",
+      "disease": "Bacterial_spot"
+    },
+    {
+      "crop": "Tomato",
+      "disease": "Early_blight"
+    },
+    {
+      "crop": "Tomato",
+      "disease": "Late_blight"
+    },
+    {
+      "crop": "Tomato",
+      "disease": "Leaf_Mold"
+    },
+    {
+      "crop": "Tomato",
+      "disease": "Septoria_leaf_spot"
+    },
+    {
+      "crop": "Tomato",
+      "disease": "Spider_mites Two-spotted_spider_mite"
+    },
+    {
+      "crop": "Tomato",
+      "disease": "Target_Spot"
+    },
+    {
+      "crop": "Tomato",
+      "disease": "Tomato_Yellow_Leaf_Curl_Virus"
+    },
+    {
+      "crop": "Tomato",
+      "disease": "Tomato_mosaic_virus"
+    },
+    {
+      "crop": "Tomato",
+      "disease": "healthy"
+    }
+  ],
+  "crop_to_indices": {
+    "Apple": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "Blueberry": [
+      4
+    ],
+    "Cherry": [
+      5,
+      6
+    ],
+    "Corn": [
+      7,
+      8,
+      9,
+      10
+    ],
+    "Grape": [
+      11,
+      12,
+      13,
+      14
+    ],
+    "Orange": [
+      15
+    ],
+    "Peach": [
+      16,
+      17
+    ],
+    "Pepper,_bell": [
+      18,
+      19
+    ],
+    "Potato": [
+      20,
+      21,
+      22
+    ],
+    "Raspberry": [
+      23
+    ],
+    "Soybean": [
+      24
+    ],
+    "Squash": [
+      25
+    ],
+    "Strawberry": [
+      26,
+      27
+    ],
+    "Tomato": [
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37
+    ]
+  },
+  "crops": [
+    "Apple",
+    "Blueberry",
+    "Cherry",
+    "Corn",
+    "Grape",
+    "Orange",
+    "Peach",
+    "Pepper,_bell",
+    "Potato",
+    "Raspberry",
+    "Soybean",
+    "Squash",
+    "Strawberry",
+    "Tomato"
+  ],
+  "img_size": 256,
+  "mean": [
+    0.485,
+    0.456,
+    0.406
+  ],
+  "std": [
+    0.229,
+    0.224,
+    0.225
+  ],
+  "architecture": "resnet18"
+}

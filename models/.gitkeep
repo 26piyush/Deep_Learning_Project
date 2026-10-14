@@ -1,0 +1,2 @@
+# Placeholder to retain the models directory in git.
+# Place downloaded model checkpoints (vit_best.pt, localization_best.pt, severity_best.pt) here.
