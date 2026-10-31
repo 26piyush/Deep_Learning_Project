@@ -1,0 +1,149 @@
+{
+  "evaluation_timestamp": "2026-10-31 10:49:51",
+  "total_testing_images": 209,
+  "total_classes": 42,
+  "total_crops": 15,
+  "top1_accuracy": 0.8947,
+  "top1_accuracy_pct": 89.47,
+  "top3_accuracy": 0.9713,
+  "top3_accuracy_pct": 97.13,
+  "macro_precision": 0.9151,
+  "macro_recall": 0.894,
+  "macro_f1": 0.8934,
+  "weighted_precision": 0.9146,
+  "weighted_recall": 0.8947,
+  "weighted_f1": 0.8936,
+  "localization_leaf_detection_rate_pct": 99.04,
+  "localization_fallback_rate_pct": 0.96,
+  "average_detected_boxes_per_image": 1.69,
+  "average_continuous_severity_pct": 20.28,
+  "total_execution_time_seconds": 157.5,
+  "average_latency_ms_per_image": 753.57,
+  "dataset_sources": [
+    {
+      "source_dataset": "PlantVillage",
+      "total_images": 163,
+      "correct": 158,
+      "accuracy_pct": 96.93
+    },
+    {
+      "source_dataset": "DiaMOS_Pear",
+      "total_images": 20,
+      "correct": 18,
+      "accuracy_pct": 90.0
+    },
+    {
+      "source_dataset": "PlantDoc",
+      "total_images": 26,
+      "correct": 11,
+      "accuracy_pct": 42.31
+    }
+  ],
+  "crop_accuracies": [
+    {
+      "crop": "Grape",
+      "total_images": 20,
+      "correct": 20,
+      "accuracy_pct": 100.0,
+      "avg_confidence_pct": 94.42
+    },
+    {
+      "crop": "Peach",
+      "total_images": 10,
+      "correct": 10,
+      "accuracy_pct": 100.0,
+      "avg_confidence_pct": 86.07
+    },
+    {
+      "crop": "Raspberry",
+      "total_images": 5,
+      "correct": 5,
+      "accuracy_pct": 100.0,
+      "avg_confidence_pct": 87.31
+    },
+    {
+      "crop": "Squash",
+      "total_images": 5,
+      "correct": 5,
+      "accuracy_pct": 100.0,
+      "avg_confidence_pct": 93.31
+    },
+    {
+      "crop": "Strawberry",
+      "total_images": 10,
+      "correct": 10,
+      "accuracy_pct": 100.0,
+      "avg_confidence_pct": 84.61
+    },
+    {
+      "crop": "Pear",
+      "total_images": 20,
+      "correct": 18,
+      "accuracy_pct": 90.0,
+      "avg_confidence_pct": 69.51
+    },
+    {
+      "crop": "Corn",
+      "total_images": 20,
+      "correct": 18,
+      "accuracy_pct": 90.0,
+      "avg_confidence_pct": 85.79
+    },
+    {
+      "crop": "Pepper, bell",
+      "total_images": 10,
+      "correct": 9,
+      "accuracy_pct": 90.0,
+      "avg_confidence_pct": 74.4
+    },
+    {
+      "crop": "Tomato",
+      "total_images": 50,
+      "correct": 44,
+      "accuracy_pct": 88.0,
+      "avg_confidence_pct": 76.29
+    },
+    {
+      "crop": "Apple",
+      "total_images": 20,
+      "correct": 17,
+      "accuracy_pct": 85.0,
+      "avg_confidence_pct": 75.64
+    },
+    {
+      "crop": "Cherry",
+      "total_images": 10,
+      "correct": 8,
+      "accuracy_pct": 80.0,
+      "avg_confidence_pct": 86.53
+    },
+    {
+      "crop": "Potato",
+      "total_images": 15,
+      "correct": 12,
+      "accuracy_pct": 80.0,
+      "avg_confidence_pct": 72.83
+    },
+    {
+      "crop": "Orange",
+      "total_images": 5,
+      "correct": 4,
+      "accuracy_pct": 80.0,
+      "avg_confidence_pct": 86.2
+    },
+    {
+      "crop": "Soybean",
+      "total_images": 5,
+      "correct": 4,
+      "accuracy_pct": 80.0,
+      "avg_confidence_pct": 79.24
+    },
+    {
+      "crop": "Blueberry",
+      "total_images": 4,
+      "correct": 3,
+      "accuracy_pct": 75.0,
+      "avg_confidence_pct": 43.97
+    }
+  ]
+}

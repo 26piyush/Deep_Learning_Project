@@ -1,0 +1,16 @@
+crop,total_images,correct,accuracy_pct,avg_confidence_pct
+Grape,20,20,100.0,94.42
+Peach,10,10,100.0,86.07
+Raspberry,5,5,100.0,87.31
+Squash,5,5,100.0,93.31
+Strawberry,10,10,100.0,84.61
+Pear,20,18,90.0,69.51
+Corn,20,18,90.0,85.79
+"Pepper, bell",10,9,90.0,74.4
+Tomato,50,44,88.0,76.29
+Apple,20,17,85.0,75.64
+Cherry,10,8,80.0,86.53
+Potato,15,12,80.0,72.83
+Orange,5,4,80.0,86.2
+Soybean,5,4,80.0,79.24
+Blueberry,4,3,75.0,43.97

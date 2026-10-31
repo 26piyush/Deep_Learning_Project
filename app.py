@@ -10,6 +10,7 @@ Pipeline:
 
 import json
 from pathlib import Path
+import pandas as pd
 import streamlit as st
 from PIL import Image
 import torch
@@ -34,6 +35,7 @@ from src.inference import (
     run_pipeline,
     visualize_result,
 )
+from src.batch_metrics_view import render_batch_metrics_view
 
 st.set_page_config(
     page_title="Crop Pathology & Decision Support — Final Review (100% Phase)",
@@ -126,6 +128,21 @@ st.markdown("""
 
 st.markdown('<div class="main-title">🌿 Precision Crop Pathology & Diagnostic System</div>', unsafe_allow_html=True)
 st.markdown('<div class="sub-title"><strong>Final Review (100% Phase)</strong> • Hierarchical Disease Bounding Boxes • ViT-B/16 Self-Attention Rollout • Dual-Mask Segmentation • Continuous Severity • Diagnosis, Symptoms & Precautions</div>', unsafe_allow_html=True)
+
+nav_mode = st.radio(
+    "Navigation Mode",
+    options=[
+        "🔬 Interactive Specimen Diagnosis",
+        "📊 Held-Out Testing Data & Metrics Dashboard (209 Benchmark Images)",
+    ],
+    horizontal=True,
+    label_visibility="collapsed",
+)
+st.markdown("---")
+
+if nav_mode == "📊 Held-Out Testing Data & Metrics Dashboard (209 Benchmark Images)":
+    render_batch_metrics_view()
+    st.stop()
 
 # Sidebar configurations
 with st.sidebar:

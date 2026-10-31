@@ -1,0 +1,4 @@
+source_dataset,total_images,correct,accuracy_pct
+PlantVillage,163,158,96.93
+DiaMOS_Pear,20,18,90.0
+PlantDoc,26,11,42.31
