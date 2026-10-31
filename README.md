@@ -2,15 +2,6 @@
 
 > An End-to-End Hierarchical Deep Learning and Vision Transformer Pipeline for Real-World Foliar Disease Localization, Diagnosis, Dual-Track Severity Grading, and Actionable Agronomic Prescriptions across 42 Pathological Classes and 15 Crop Species.
 
-[![Python](https://img.shields.io/badge/Python-3.10%2B-blue.svg?logo=python&logoColor=white)](https://www.python.org/)
-[![PyTorch](https://img.shields.io/badge/PyTorch-2.5%20CUDA-EE4C2C.svg?logo=pytorch&logoColor=white)](https://pytorch.org/)
-[![Ultralytics](https://img.shields.io/badge/YOLOv8-Localization-00FFFF.svg?logo=yolo&logoColor=black)](https://github.com/ultralytics/ultralytics)
-[![Vision Transformer](https://img.shields.io/badge/ViT--B%2F16-86.6M%20Params-FF6F00.svg)](https://arxiv.org/abs/2010.11929)
-[![Streamlit](https://img.shields.io/badge/Streamlit-Interactive%20UI-FF4B4B.svg?logo=streamlit&logoColor=white)](https://streamlit.io/)
-[![GitHub Release](https://img.shields.io/badge/Model%20Weights-v1.0.0%20(Hosted)-success.svg?logo=github)](https://github.com/26piyush/Deep_Learning_Project/releases/tag/v1.0.0)
-
----
-
 ## Table of Contents
 1. [Project Overview and Problem Formulation](#1-project-overview-and-problem-formulation)
 2. [System Architecture](#2-system-architecture)
@@ -43,7 +34,7 @@ Most existing automated plant pathology systems are trained on clean, isolated l
 To resolve these deficiencies, this repository implements a modular, multi-tier system:
 - **Hierarchical Region Extraction:** Employs Ultralytics YOLOv8n to isolate foliar tissue, eliminating over 80% of background noise.
 - **Smart Context Boundary Padding:** Expands localized bounding boxes by +15% padding to ensure marginal chlorotic rings and fungal haloes are fully preserved.
-- **Global Multi-Head Attention:** Vision Transformer (`ViT-B/16`, 86.6M parameters) captures global, long-range relationships across distant lesion margins that local convolutional kernels miss.
+- **Global Multi-Head Attention:** Vision Transformer (ViT-B/16, 86.6M parameters) captures global, long-range relationships across distant lesion margins that local convolutional kernels miss.
 - **Dual-Track Severity Assessment:** Evaluates infection stage through both an agronomic 5-tier Horsfall-Barratt classifier and a continuous mathematical pixel necropsy metric (Lesion Area / Leaf Area).
 - **Explainability and Prescription Synthesis:** Visualizes self-attention rollout token heatmaps and translates diagnosis into FRAC-coded chemical fungicide schedules, biological bio-controls, and cultural sanitation measures.
 
@@ -51,112 +42,112 @@ To resolve these deficiencies, this repository implements a modular, multi-tier 
 
 ## 2. System Architecture
 
-```
+```text
 ===================================================================================================
                                INPUT LAYER: FIELD SPECIMEN
 ===================================================================================================
                                   [ Input Field Image ]
-                                            │
-                                            ▼
-                           ┌─────────────────────────────────┐
-                           │      IMAGE PREPROCESSING        │
-                           │  • RGB Mode Enforcement         │
-                           │  • File Byte Corruption Guard   │
-                           │  • EXIF Orientation Fix         │
-                           └─────────────────────────────────┘
-                                            │
+                                            |
+                                            v
+                           +---------------------------------+
+                           |      IMAGE PREPROCESSING        |
+                           |  - RGB Mode Enforcement (3-Ch)  |
+                           |  - File Byte Integrity Check    |
+                           +---------------------------------+
+                                            |
 ===================================================================================================
                                STAGE 1: LOCALIZATION LAYER
 ===================================================================================================
-                                            │
-                                            ▼
-                           ┌─────────────────────────────────┐
-                           │    Ultralytics YOLOv8n Leaf     │
-                           │      and Region Detector        │
-                           └─────────────────────────────────┘
-                                            │
-                       ┌────────────────────┴────────────────────┐
+                                            |
+                                            v
+                           +---------------------------------+
+                           |    Ultralytics YOLOv8n Leaf     |
+                           |      and Region Detector        |
+                           +---------------------------------+
+                                            |
+                       +--------------------+--------------------+
               [ Bounding Box(es) Found ]                  [ No Detection ]
-                       │                                         │
-                       ▼                                         ▼
-         ┌───────────────────────────┐             ┌───────────────────────────┐
-         │    SMART CONTEXT CROP     │             │    CONTROLLED FALLBACK    │
-         │ • Merge intersecting bboxes│             │ • Full frame center-crop  │
-         │ • Add +15% margin padding │             │ • Set fallback flag = True│
-         │ • Prevent halo truncation │             │ • Log telemetry advisory  │
-         └───────────────────────────┘             └───────────────────────────┘
-                       │                                         │
-                       └────────────────────┬────────────────────┘
-                                            │ (Extracted Foliar ROI: 224×224)
+                       |                                         |
+                       v                                         v
+         +---------------------------+             +---------------------------+
+         |    SMART CONTEXT CROP     |             |    CONTROLLED FALLBACK    |
+         | - Merge overlapping boxes |             | - Full frame center-crop  |
+         | - Add +15% margin padding |             | - Set fallback flag = True|
+         | - Prevent halo clipping   |             | - Log telemetry advisory  |
+         +---------------------------+             +---------------------------+
+                       |                                         |
+                       +--------------------+--------------------+
+                                            | (Extracted Foliar ROI: 224x224)
 ===================================================================================================
                              STAGE 2: MULTI-ENGINE DIAGNOSTIC LAYER
 ===================================================================================================
-                                            │
-         ┌──────────────────────────────────┴──────────────────────────────────┐
-         │                                                                     │
-         ▼                                                                     ▼
-┌─────────────────────────────────┐                   ┌─────────────────────────────────┐
-│     ENGINE 1: ViT-B/16          │                   │   ENGINE 2: ResNet-18 BASELINE  │
-│ • 196 Image Patches (16×16)     │                   │ • 11.2M Parameters              │
-│ • 12 Multi-Head Attention Blocks│                   │ • 38 PlantVillage Classes       │
-│ • 86.6M Parameters              │                   │ • 14 Crop Species               │
-│ • 42 Unified Classes (15 Crops) │                   │ • Fast Edge Execution           │
-└────────────────┬────────────────┘                   └────────────────┬────────────────┘
-                 │                                                     │
-                 ├──────────────────────────┬──────────────────────────┤
-                 ▼                          ▼                          ▼
+                                            |
+         +----------------------------------+----------------------------------+
+         |                                                                     |
+         v                                                                     v
++---------------------------------+                   +---------------------------------+
+|     ENGINE 1: ViT-B/16          |                   |   ENGINE 2: ResNet-18 BASELINE  |
+| - 196 Image Patches (16x16)     |                   | - 11.2M Parameters              |
+| - 12 Multi-Head Attention Blocks|                   | - 38 PlantVillage Classes       |
+| - 86.6M Parameters              |                   | - 14 Crop Species               |
+| - 42 Unified Classes (15 Crops) |                   | - Fast Edge Execution           |
++----------------+----------------+                   +----------------+----------------+
+                 |                                                     |
+                 +--------------------------+--------------------------+
+                 |                          |                          |
+                 v                          v                          v
       [ Engine 1: ViT Standalone ] [ Engine 3: Smart Cascade ] [ Engine 4: Side-by-Side ]
       Direct ViT Probabilities     ViT if conf >= 65%;         Concurrent execution with
                                    else escalate to ResNet-18  consensus agreement metric
-                                            │
+                                            |
 ===================================================================================================
                           STAGE 3: DUAL-TRACK SEVERITY ASSESSMENT
 ===================================================================================================
-                                            │
-                 ┌──────────────────────────┴──────────────────────────┐
-                 │                                                     │
-                 ▼                                                     ▼
-┌─────────────────────────────────┐                   ┌─────────────────────────────────┐
-│     TRACK A: DISCRETE MODEL     │                   │   TRACK B: MATHEMATICAL RATIO   │
-│ • ResNet-18 Severity Classifier │                   │ • Dual-Mask Pixel Segmentation  │
-│ • 5 Horsfall-Barratt Levels:    │                   │ • Leaf Surface Mask (L_mask)    │
-│   - No Risk   (0%)              │                   │ • Lesion Symptom Mask (D_mask)  │
-│   - Very Low  (1% – 5%)         │                   │ • Physical Area Calculation:    │
-│   - Low       (6% – 15%)        │                   │         Infected Lesion Area    │
-│   - Medium    (16% – 35%)       │                   │   % = ───────────────────────── │
-│   - High      (> 35%)           │                   │          Total Leaf Area        │
-└────────────────┬────────────────┘                   └────────────────┬────────────────┘
-                 │                                                     │
+                                            |
+                 +--------------------------+--------------------------+
+                 |                                                     |
+                 v                                                     v
++---------------------------------+                   +---------------------------------+
+|     TRACK A: DISCRETE MODEL     |                   |   TRACK B: MATHEMATICAL RATIO   |
+| - ResNet-18 Severity Classifier |                   | - Dual-Mask Pixel Segmentation  |
+| - 5 Horsfall-Barratt Levels:    |                   | - Leaf Surface Mask (L_mask)    |
+|   * No Risk   (0%)              |                   | - Lesion Symptom Mask (D_mask)  |
+|   * Very Low  (1% - 5%)         |                   | - Physical Area Calculation:    |
+|   * Low       (6% - 15%)        |                   |         Infected Lesion Area    |
+|   * Medium    (16% - 35%)       |                   |   % = ------------------------- |
+|   * High      (> 35%)           |                   |          Total Leaf Area        |
++----------------+----------------+                   +----------------+----------------+
+                 |                                                     |
 ===================================================================================================
                     STAGE 4 & 5: EXPLAINABILITY AND PRESCRIPTION SYNTHESIS
 ===================================================================================================
-                 │                                                     │
-                 ├──────────────────────────┬──────────────────────────┘
-                 │                          │
-                 ▼                          ▼
-┌─────────────────────────────────┐  ┌─────────────────────────────────┐
-│   STAGE 4: ATTENTION ROLLOUT    │  │   STAGE 5: AGRONOMIC ACTION     │
-│ • Multi-Head Self-Attention Map │  │ • FRAC-Coded Chemical Fungicide │
-│ • Visual Attention Heatmap      │  │ • Dilution Dosage per Liter     │
-│ • Symptom Bounding Box Overlay  │  │ • Biological Bio-Controls       │
-│ • Transparent Diagnostic Audit  │  │ • Cultural Field Sanitation     │
-└────────────────┬────────────────┘  │ • Intervention Spray Timelines  │
-                 │                   └────────────────┬────────────────┘
-                 │                                    │
+                 |                                                     |
+                 +--------------------------+--------------------------+
+                 |                          |
+                 v                          v
++---------------------------------+  +---------------------------------+
+|   STAGE 4: ATTENTION ROLLOUT    |  |   STAGE 5: AGRONOMIC ACTION     |
+| - Multi-Head Self-Attention Map |  | - FRAC-Coded Chemical Fungicide |
+| - Visual Attention Heatmap      |  | - Dilution Dosage per Liter     |
+| - Symptom Bounding Box Overlay  |  | - Biological Bio-Controls       |
+| - Transparent Diagnostic Audit  |  | - Cultural Field Sanitation     |
++----------------+----------------+  | - Intervention Spray Timelines  |
+                 |                   +----------------+----------------+
+                 |                                    |
 ===================================================================================================
                                OUTPUT PRESENTATION LAYER
 ===================================================================================================
-                 └──────────────────┬─────────────────┘
-                                    │
-                                    ▼
-                 ┌─────────────────────────────────────┐
-                 │  INTERACTIVE STREAMLIT DASHBOARD    │
-                 │  • Real-Time Foliar Inspection      │
-                 │  • 15-Crop Diagnostic Filter        │
-                 │  • Top-3 Probability Distributions  │
-                 │  • Side-by-Side Architectural Delta │
-                 │  • Acreage Dosage Calculator        │
-                 └─────────────────────────────────────┘
+                 +------------------+-----------------+
+                                    |
+                                    v
+                 +-------------------------------------+
+                 |  INTERACTIVE STREAMLIT DASHBOARD    |
+                 |  - Real-Time Foliar Inspection      |
+                 |  - 15-Crop Diagnostic Filter        |
+                 |  - Top-3 Probability Distributions  |
+                 |  - Side-by-Side Architectural Delta |
+                 |  - Acreage Dosage Calculator        |
+                 +-------------------------------------+
 ```
 
 ---
@@ -181,17 +172,17 @@ Instead of looking at small groups of pixels at a time like traditional CNNs, th
 4. **Final Decision:** The combined information from all patches flows into a classification head that calculates confidence scores across all 42 disease classes.
 
 #### The 4 Diagnostic Engine Modes
-1. **Engine 1 — Vision Transformer (ViT-B/16 Unified):** The primary diagnostic model (86.6M parameters) fine-tuned across all lab and field datasets (42 classes, 15 crops).
-2. **Engine 2 — Crop Health ResNet-18 Baseline:** An 11.2M parameter residual network covering 38 PlantVillage classes, providing a fast baseline for speed and comparison.
-3. **Engine 3 — Smart Hybrid Cascade:** Runs the Vision Transformer first. If its confidence is 65% or higher, the diagnosis is accepted. If confidence falls below 65%, the system automatically calls the 38-class ResNet-18 model as a second opinion.
-4. **Engine 4 — Side-by-Side Dual Engine Comparison:** Runs both models at the same time on the exact same leaf, displaying both predictions, confidence scores, and whether the two models agree.
+1. **Engine 1 - Vision Transformer (ViT-B/16 Unified):** The primary diagnostic model (86.6M parameters) fine-tuned across all lab and field datasets (42 classes, 15 crops).
+2. **Engine 2 - Crop Health ResNet-18 Baseline:** An 11.2M parameter residual network covering 38 PlantVillage classes, providing a fast baseline for speed and comparison.
+3. **Engine 3 - Smart Hybrid Cascade:** Runs the Vision Transformer first. If its confidence is 65% or higher, the diagnosis is accepted. If confidence falls below 65%, the system automatically calls the 38-class ResNet-18 model as a second opinion.
+4. **Engine 4 - Side-by-Side Dual Engine Comparison:** Runs both models at the same time on the exact same leaf, displaying both predictions, confidence scores, and whether the two models agree.
 
 ---
 
 ### Stage 3: Dual-Track Severity Assessment
 To give practical value to farmers and agronomists, the system calculates disease severity using two separate methods:
 
-* **Track A — Discrete Severity Classifier (ResNet-18):**
+* **Track A - Discrete Severity Classifier (ResNet-18):**
   A dedicated network trained on the DiaMOS Plant dataset that categorizes damage into 5 practical risk levels based on the standard **Horsfall-Barratt plant pathology scale**:
   - `No Risk`: Healthy leaf (0% tissue damage)
   - `Very Low`: Early infection spots (1% to 5% leaf damage)
@@ -199,10 +190,10 @@ To give practical value to farmers and agronomists, the system calculates diseas
   - `Medium`: Significant spreading (16% to 35% leaf damage)
   - `High`: Severe necrosis and defoliation risk (more than 35% leaf damage)
 
-* **Track B — Continuous Mathematical Pixel Ratio:**
+* **Track B - Continuous Mathematical Pixel Ratio:**
   Color-space segmentation isolates the green leaf surface from the brown/yellow diseased spots to calculate the exact percentage of tissue lost:
   ```text
-  Severity Percentage = (Infected Lesion Area / Total Leaf Area) × 100%
+  Severity Percentage = (Infected Lesion Area / Total Leaf Area) * 100%
   ```
 
 ---
@@ -238,7 +229,7 @@ The system provides diagnostic coverage across **42 conditions spanning 15 crop 
 | **Grape** | Black Rot, Esca (Black Measles), Leaf Blight (Isariopsis Leaf Spot), Healthy |
 | **Orange** | Huanglongbing (Citrus Greening) |
 | **Peach** | Bacterial Spot, Healthy |
-| **Pear** | Pear Leaf Curl, Pear Healthy, Pear Slug Sawfly, Pear Leaf Spot *(DiaMOS Plant)* |
+| **Pear** | Pear Leaf Curl, Pear Healthy, Pear Slug Sawfly, Pear Leaf Spot (DiaMOS Plant) |
 | **Pepper (Bell)** | Bacterial Spot, Healthy |
 | **Potato** | Early Blight, Late Blight, Healthy |
 | **Raspberry** | Healthy |
@@ -253,23 +244,26 @@ The system provides diagnostic coverage across **42 conditions spanning 15 crop 
 
 To bridge the gap between clean lab photos and real-world field images, three distinct datasets were unified:
 
-```
+```text
                             ALL DATASETS (68,131 Images)
-                                         │
-        ┌────────────────────────────────┼────────────────────────────────┐
-        ▼                                ▼                                ▼
+                                         |
+        +--------------------------------+--------------------------------+
+        |                                |                                |
+        v                                v                                v
 [ PlantVillage ]                 [ PlantDoc ]                    [ DiaMOS Plant ]
-• Controlled lab setting         • Real-world field images       • Real-world pear orchard
-• 54,299 images                  • 7,906 leaf crops              • 5,926 leaf images
-• 38 classes across 14 crops     • Cluttered backgrounds         • 4 disease classes + severity
-        │                                │                                │
-        └────────────────────────────────┼────────────────────────────────┘
-                                         ▼
+- Controlled lab setting         - Real-world field images       - Real-world pear orchard
+- 54,299 images                  - 7,906 leaf crops              - 5,926 leaf images
+- 38 classes across 14 crops     - Cluttered backgrounds         - 4 disease classes + severity
+        |                                |                                |
+        +--------------------------------+--------------------------------+
+                                         |
+                                         v
                       [ STRATIFIED UNIFIED PARTITIONING ]
                           (Fixed Random Seed: 42)
-                                         │
-        ┌────────────────────────────────┼────────────────────────────────┐
-        ▼ (70%)                          ▼ (15%)                          ▼ (15%)
+                                         |
+        +--------------------------------+--------------------------------+
+        | (70%)                          | (15%)                          | (15%)
+        v                                v                                v
    TRAINING SET                     VALIDATION SET                    TEST SET
   (47,672 Images)                  (10,200 Images)                (10,259 Images)
   Model Learning                   Checkpoint Selection           Unseen Final Test
@@ -291,7 +285,7 @@ All models were evaluated on dedicated held-out test splits on local hardware (N
 | **Unified ViT Classifier** | ViT-B/16 (ImageNet-1K) | Unified Test Split (10,259 images) | **87.44%** | **86.13%** | Top-1 Accuracy |
 | **ViT Pure Lab Benchmark** | ViT-B/16 | PlantVillage Held-Out Test (8,178 images) | **97.75%** | **96.99%** | Macro F1 |
 | **ViT Solanaceae Subset** | ViT-B/16 | Review 2 Stratified Test Split (977 images) | **99.49%** | **99.46%** | Macro F1 |
-| **Leaf Localization** | YOLOv8n | PlantDoc Test Annotations | — | — | **72.45% mAP@50** (0.467 IoU) |
+| **Leaf Localization** | YOLOv8n | PlantDoc Test Annotations | -- | -- | **72.45% mAP@50** (0.467 IoU) |
 | **Severity Assessment** | ResNet-18 | DiaMOS Discrete Severity Test Split | **66.53%** | **70.22%** | Macro F1 |
 
 Training curves, confusion matrices, and verification outputs are archived in `results/`.
