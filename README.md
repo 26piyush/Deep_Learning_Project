@@ -229,20 +229,88 @@ To give practical value to farmers and agronomists, the system calculates diseas
 ---
 
 ### Stage 4: Attention Rollout Explainability
-To make the AI transparent instead of a "black box", the system implements Multi-Head Attention Rollout:
-- As the Vision Transformer passes information through its 12 layers, it assigns attention weights to different patches of the leaf.
-- We trace these attention scores backward from the final decision to the original image patches.
-- This creates an **explainability heatmap** overlaid on the leaf: red and yellow areas highlight the exact fungal spots and tissue lesions the model used to reach its diagnosis.
+Standard deep learning classifiers act as black boxes: they output a probability percentage (such as "Tomato Early Blight: 94%") without proving what visual symptoms justified the decision. The explainability module (src/explainability.py) resolves this by extracting and visualizing internal self-attention weights:
+
+```text
+[Input Leaf Crop: 224x224]
+            |
+            v
+[ViT-B/16 Final Encoder Layer] ---> PyTorch forward hook intercepts Q, K, V tensors
+            |
+            v
+[Scaled Dot-Product Attention] ---> Computes Q * K^T similarity across all 12 heads
+            |
+            v
+[Class Token Weight Extraction] --> Extracts 196 spatial patch weights (14x14 grid)
+            |
+            v
+[Bi-Cubic Upsampling] ------------> Resizes 14x14 attention grid to full 224x224
+            |
+            v
+[Alpha-Blended Heatmap Overlay] --> Red/Yellow highlights exact symptomatic lesion areas
+            |
+            v
+[Grounded Symptom Bounding Boxes] > Draws inner boxes around confirmed lesion clusters
+```
+
+How it works step-by-step:
+1. Intercepting Transformer Attention (compute_vit_attention):
+   - A PyTorch forward hook registers on the final self-attention block of the Vision Transformer.
+   - When an image passes through, the hook captures the Query (Q), Key (K), and Value (V) tensors across all 12 attention heads.
+   - It computes the dot-product similarity between patches and extracts the classification token attention distribution across all 196 image patches (14x14 spatial grid).
+2. Generating the Attention Heatmap (generate_attention_heatmap):
+   - The normalized 14x14 attention grid is scaled up to 224x224 using bi-cubic interpolation.
+   - A color gradient is applied: warm red and yellow tones indicate maximum model focus (lesion hotspots), while cool blue tones indicate background or uninformative green tissue.
+3. Alpha-Blended Overlay (overlay_heatmap_on_image):
+   - The colorized heatmap is blended over the original leaf using a 50% transparency alpha weight, allowing plant pathologists to visually audit the decision.
+4. Extracting Grounded Symptom Bounding Boxes (extract_disease_bounding_boxes):
+   - The system combines the continuous attention heatmap with the segmented necrotic tissue mask.
+   - Lesion clusters where both physical tissue loss and transformer attention peak receive an inner symptom bounding box labeled with the disease name.
+   - This produces Two-Tier Hierarchical Visualization:
+     * Green Outer Box: Complete leaf boundary detected by YOLOv8.
+     * Yellow and Red Inner Boxes: Specific disease lesion sites grounded by transformer attention.
 
 ---
 
 ### Stage 5: Agronomic Prescription and Treatment Engine
-Once the disease and its severity are identified, the system looks up verified management recommendations:
-- **FRAC-Coded Chemical Fungicides:** Recommends commercial fungicides (*e.g., Chlorothalonil 75% WP, Metalaxyl-M + Mancozeb, Difenoconazole*) along with exact water dilution rates (*e.g., 2.0 to 2.5 grams per liter of water*).
-- **Biological Controls:** Preventative bio-agents such as *Bacillus subtilis* or *Trichoderma harzianum*.
-- **Cultural Field Practices:** Sanitation, pruning infected branches, canopy aeration, and switching to drip irrigation.
-- **Spray Timelines:** Clear application schedules based on whether the severity is mild or emergency-level.
-- **Acreage Tank Mix Calculator:** Calculates the exact amount of commercial product needed based on the user's field size.
+A diagnosis alone is insufficient for field management. An effective response requires knowing what treatment to apply, at what dosage, and how urgently. The prescription engine (src/prescription.py and src/knowledge_base.py) converts diagnostic outputs into actionable agronomic protocols:
+
+```text
+DIAGNOSTIC INPUTS:
+  * Diagnosed Pathogen (e.g., Early Blight)
+  * Exact Physical Damage % (e.g., 22.4% necrosis)
+  * Crop Species (e.g., Tomato)
+  * Field Acreage (e.g., 5.0 acres)
+                     |
+                     v
+   [ src/prescription.py & src/knowledge_base.py ]
+                     |
+                     +---> Causal Organism (Alternaria solani)
+                     +---> FRAC-Coded Chemical Fungicide & Dilution Rate
+                     +---> Non-Chemical Biological Controls
+                     +---> Cultural Field Sanitation Practices
+                     +---> Urgency Escalation (Mild vs. Emergency)
+                     +---> Total Chemical Tank Mix for Field Acreage
+```
+
+How it works step-by-step:
+1. Multi-Dimensional Input Matching:
+   - Ingests four key parameters: identified crop species, disease condition, continuous severity percentage (from Stage 3 pixel necropsy), and user-specified field acreage.
+2. Severity-Calibrated Urgency Scaling:
+   - Trace / Incipient (< 5% damage): Preventative treatment; apply bio-fungicide or light protective spray.
+   - Early Outbreak (5% - 15% damage): Standard protective fungicide schedule.
+   - Active Treatment (15% - 35% damage): Active therapeutic spray applied at 7-10 day intervals.
+   - Critical Emergency (> 35% damage): Emergency systemic chemical application required within 12-24 hours to halt canopy defoliation.
+3. Pathogen Profile and Causal Organism Lookup:
+   - Identifies the scientific organism (e.g., Alternaria solani, Phytophthora infestans, Venturia inaequalis) and pathogen type (Fungal, Bacterial, Viral, or Insect Vector).
+   - Reports environmental triggers (optimal temperature and relative humidity ranges that promote spore germination).
+4. FRAC-Coded Chemical and Biological Recommendations:
+   - Chemical Formulations: Recommends specific active ingredients (e.g., Chlorothalonil 75% WP, Metalaxyl-M + Mancozeb, Difenoconazole 25% EC) with exact dilution rates (grams or milliliters per liter of water).
+   - Resistance Management: Recommends alternating FRAC fungicide classes (e.g., FRAC 3 vs. FRAC 9) to prevent resistant fungal strains.
+   - Biological Alternatives: Non-chemical bio-controls including Trichoderma harzianum, Bacillus subtilis, and potassium bicarbonate.
+   - Cultural Sanitation: Drip-irrigation transitions, canopy aeration, infected foliage roguing, and pruning tool sterilization.
+5. Field Acreage Tank Mix Calculation:
+   - The interactive dashboard multiplies the dilution rate by standard spray carrier volume (200 liters per acre) to calculate the total kilograms or liters of commercial product required for the farmer's specific field size.
 
 ---
 
