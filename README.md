@@ -6,6 +6,7 @@
 1. [Project Overview and Problem Formulation](#1-project-overview-and-problem-formulation)
 2. [System Architecture](#2-system-architecture)
 3. [Component-by-Component Technical Breakdown](#3-component-by-component-technical-breakdown)
+   - [Input Image Preprocessing and Validation Pipeline](#input-image-preprocessing-and-validation-pipeline)
    - [Stage 1: Hierarchical Localization and Smart Context Cropping](#stage-1-hierarchical-localization-and-smart-context-cropping)
    - [Stage 2: Multi-Engine Foliar Diagnosis (ViT-B/16 and ResNet-18)](#stage-2-multi-engine-foliar-diagnosis-vit-b16-and-resnet-18)
    - [Stage 3: Dual-Track Severity Assessment](#stage-3-dual-track-severity-assessment)
@@ -153,6 +154,35 @@ To resolve these deficiencies, this repository implements a modular, multi-tier 
 ---
 
 ## 3. Component-by-Component Technical Breakdown
+
+### Input Image Preprocessing and Validation Pipeline
+Before passing any foliar specimen to the neural network models, the system executes an automated preprocessing and validation sequence (src/preprocessing.py):
+
+* File Integrity and Corruption Validation:
+  - Empty File Detection: Confirms file size is non-zero (rejecting 0-byte corrupt files before memory allocation).
+  - Byte Stream Header Verification: Executes PIL's verify() to check internal JPEG and PNG byte structure without full decompression overhead.
+  - Dimension Checking: Verifies that image dimensions are strictly positive (width > 0 and height > 0).
+  - Fault-Tolerant Loading: Configures ImageFile.LOAD_TRUNCATED_IMAGES = True to safely handle truncated or streaming image downloads common with edge cameras.
+
+* Color Space Standardization (RGB Enforcement):
+  - Strips transparent alpha channels from 4-channel PNG uploads (RGBA).
+  - Converts single-channel Grayscale and 4-channel CMYK images into standardized 3-channel RGB.
+  - Guarantees that every input tensor strictly adheres to the (3, H, W) shape expected by PyTorch and torchvision models.
+
+* Foliar Region Resizing and Tensor Normalization:
+  - Resolution Scaling: Standardizes leaf image inputs by resizing to 256x256 followed by a centered 224x224 crop.
+  - Tensor Normalization: Applies ImageNet distribution parameters across RGB channels:
+    * Mean: [0.485, 0.456, 0.406]
+    * Standard Deviation: [0.229, 0.224, 0.225]
+  - Floating Point Mapping: Scales integer pixel intensities from [0, 255] to normalized PyTorch float tensors for GPU execution.
+
+* Training Data Augmentation Pipeline:
+  - Random Resized Cropping (scale 0.75 to 1.0): Simulates varying drone and handheld camera distances.
+  - Random Horizontal Flip (50% probability): Preserves bilateral leaf symmetry invariance.
+  - Random Rotation (+/- 15 degrees): Accommodates tilted smartphone angles in field photography.
+  - Color Jitter (Brightness 0.2, Contrast 0.2, Saturation 0.15, Hue 0.05): Simulates varying sunlight, cloud shadows, and ambient weather.
+
+---
 
 ### Stage 1: Hierarchical Localization and Smart Context Cropping
 * **Model:** Ultralytics YOLOv8n (nano variant, ~3.2M parameters) trained on field bounding box labels.
